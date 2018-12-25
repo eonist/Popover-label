@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F110DED621CF8D5100096BC0 /* StyleUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DED521CF8D5100096BC0 /* StyleUtil.swift */; };
+		F110DEDA21CF94F500096BC0 /* Chaplin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DED721CF94F500096BC0 /* Chaplin.framework */; };
+		F110DEDB21CF94F500096BC0 /* Chaplin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F110DED721CF94F500096BC0 /* Chaplin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F110DEDC21CF94F500096BC0 /* With.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DED821CF94F500096BC0 /* With.framework */; };
+		F110DEDD21CF94F500096BC0 /* With.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F110DED821CF94F500096BC0 /* With.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F110DEDE21CF94F500096BC0 /* Spatial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DED921CF94F500096BC0 /* Spatial.framework */; };
+		F110DEDF21CF94F500096BC0 /* Spatial.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F110DED921CF94F500096BC0 /* Spatial.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F110DEE221CF972500096BC0 /* CustomShapedShadowView+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DEE121CF972500096BC0 /* CustomShapedShadowView+Style.swift */; };
+		F110DEE421D2502F00096BC0 /* VC+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DEE321D2502F00096BC0 /* VC+Util.swift */; };
 		F1B773C521CE2DF900C4B90F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B773C421CE2DF900C4B90F /* AppDelegate.swift */; };
 		F1B773C721CE2DF900C4B90F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B773C621CE2DF900C4B90F /* ViewController.swift */; };
 		F1B773CA21CE2DF900C4B90F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B773C821CE2DF900C4B90F /* Main.storyboard */; };
@@ -16,7 +25,29 @@
 		F1B773DA21CE2F6200C4B90F /* VC+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B773D921CE2F6200C4B90F /* VC+Create.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F110DEE021CF94F500096BC0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F110DEDD21CF94F500096BC0 /* With.framework in Embed Frameworks */,
+				F110DEDB21CF94F500096BC0 /* Chaplin.framework in Embed Frameworks */,
+				F110DEDF21CF94F500096BC0 /* Spatial.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F110DED521CF8D5100096BC0 /* StyleUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleUtil.swift; sourceTree = "<group>"; };
+		F110DED721CF94F500096BC0 /* Chaplin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chaplin.framework; path = Carthage/Build/iOS/Chaplin.framework; sourceTree = "<group>"; };
+		F110DED821CF94F500096BC0 /* With.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = With.framework; path = Carthage/Build/iOS/With.framework; sourceTree = "<group>"; };
+		F110DED921CF94F500096BC0 /* Spatial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spatial.framework; path = Carthage/Build/iOS/Spatial.framework; sourceTree = "<group>"; };
+		F110DEE121CF972500096BC0 /* CustomShapedShadowView+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomShapedShadowView+Style.swift"; sourceTree = "<group>"; };
+		F110DEE321D2502F00096BC0 /* VC+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+Util.swift"; sourceTree = "<group>"; };
 		F1B773C121CE2DF900C4B90F /* 1up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1up.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B773C421CE2DF900C4B90F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1B773C621CE2DF900C4B90F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,15 +64,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F110DEDC21CF94F500096BC0 /* With.framework in Frameworks */,
+				F110DEDA21CF94F500096BC0 /* Chaplin.framework in Frameworks */,
+				F110DEDE21CF94F500096BC0 /* Spatial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F110DED421CF8D3D00096BC0 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				F110DED521CF8D5100096BC0 /* StyleUtil.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
 		F1B773B821CE2DF900C4B90F = {
 			isa = PBXGroup;
 			children = (
+				F110DED721CF94F500096BC0 /* Chaplin.framework */,
+				F110DED921CF94F500096BC0 /* Spatial.framework */,
+				F110DED821CF94F500096BC0 /* With.framework */,
 				F1B773C321CE2DF900C4B90F /* 1up */,
 				F1B773C221CE2DF900C4B90F /* Products */,
 			);
@@ -61,6 +106,7 @@
 				F1B773C421CE2DF900C4B90F /* AppDelegate.swift */,
 				F1B773C621CE2DF900C4B90F /* ViewController.swift */,
 				F1B773D921CE2F6200C4B90F /* VC+Create.swift */,
+				F110DEE321D2502F00096BC0 /* VC+Util.swift */,
 				F1B773D621CE2F1D00C4B90F /* customshadowview */,
 				F1B773C821CE2DF900C4B90F /* Main.storyboard */,
 				F1B773CB21CE2DFC00C4B90F /* Assets.xcassets */,
@@ -74,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				F1B773D721CE2F2A00C4B90F /* CustomShapedShadowView.swift */,
+				F110DEE121CF972500096BC0 /* CustomShapedShadowView+Style.swift */,
+				F110DED421CF8D3D00096BC0 /* util */,
 			);
 			path = customshadowview;
 			sourceTree = "<group>";
@@ -88,6 +136,7 @@
 				F1B773BD21CE2DF900C4B90F /* Sources */,
 				F1B773BE21CE2DF900C4B90F /* Frameworks */,
 				F1B773BF21CE2DF900C4B90F /* Resources */,
+				F110DEE021CF94F500096BC0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,6 +202,9 @@
 				F1B773D821CE2F2A00C4B90F /* CustomShapedShadowView.swift in Sources */,
 				F1B773DA21CE2F6200C4B90F /* VC+Create.swift in Sources */,
 				F1B773C521CE2DF900C4B90F /* AppDelegate.swift in Sources */,
+				F110DED621CF8D5100096BC0 /* StyleUtil.swift in Sources */,
+				F110DEE421D2502F00096BC0 /* VC+Util.swift in Sources */,
+				F110DEE221CF972500096BC0 /* CustomShapedShadowView+Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +351,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = 1up/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -316,6 +372,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = 1up/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "cb2e7168956722cefdf29f40ef7c105c6f476a55",
+  "iOS" : [
+    {
+      "name" : "Spatial",
+      "hash" : "8ca1064bc96f29563f0e9566e1795188ef214493d049592f5621d7a03a971613"
+    }
+  ]
+}

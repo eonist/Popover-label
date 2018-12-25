@@ -1,0 +1,11 @@
+framework module Chaplin {
+  umbrella header "Chaplin.h"
+
+  export *
+  module * { export * }
+}
+
+module Chaplin.Swift {
+    header "Chaplin-Swift.h"
+    requires objc
+}
