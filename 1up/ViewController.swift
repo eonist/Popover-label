@@ -26,18 +26,6 @@ class ViewController: UIViewController {
 //      let polarLength
 //      createEquilateralTriangle()
       
-      
-      let arrowHeight:CGFloat = 20
-      
-      let rect:CGRect = {
-         let size:CGSize = .init(width:200,height:100+arrowHeight)
-         let position:CGPoint = .init(x:UIScreen.main.bounds.width/2-size.width/2, y:UIScreen.main.bounds.height/2-size.height/2)
-         return .init(origin:position, size:size)
-      }()
-      let tagView:UIView = .init(frame:rect)
-//      tagView.backgroundColor = .lightGray/*Debug*/
-      self.view.addSubview(tagView)
-      let shapeLayer = createArrowBox(rect: tagView.bounds, arrowHeight: arrowHeight, radius:20)
-      tagView.layer.addSublayer(shapeLayer)
+      createPopoverTag()
    }
 }
