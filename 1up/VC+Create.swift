@@ -82,6 +82,21 @@ extension ViewController{
          let s = Constraint.size(view, size: .init(width:200,height:100+arrowHeight))
          return (a,s)
       }
+      tagView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+      tagView.alpha = 0
+      func outro(){
+         UIView.animate(withDuration: 0.15, delay: 1.0, options: [.allowUserInteraction, .curveEaseOut], animations: {
+            tagView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+            tagView.alpha = 0
+         },completion:{flag in intro();Swift.print("outro done")})
+      }
+      func intro(){
+         UIView.animate(withDuration: 0.15, delay: 1.0, options: [.allowUserInteraction, .curveEaseOut], animations: {
+            tagView.transform = CGAffineTransform.identity
+            tagView.alpha = 1
+         },completion:{flag in outro();Swift.print("intro done")})
+      }
+      intro()
       //tagView.backgroundColor = .lightGray/*Debug*/
    }
 }

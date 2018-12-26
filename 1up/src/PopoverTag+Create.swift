@@ -28,7 +28,7 @@ extension PopoverTag{
     * Creates the background layer
     */
    func createBackgroundLayer() -> CAShapeLayer{
-      let shapeLayer = PopoverTag.createArrowBox(rect: self.bounds, arrowHeight: arrowHeight, radius:20)
+      let shapeLayer = PopoverTag.createArrowBox(rect: self.bounds, arrowHeight: arrowHeight, style:style)
       self.layer.addSublayer(shapeLayer)
       return shapeLayer
    }

@@ -1,5 +1,4 @@
 import UIKit
-
 /**
  * Util
  */
@@ -7,7 +6,7 @@ extension PopoverTag{
    /**
     * Creates the Arrow box graphics
     */
-   static func createArrowBox(rect:CGRect, arrowHeight:CGFloat, radius:CGFloat) -> CAShapeLayer{
+   static func createArrowBox(rect:CGRect, arrowHeight:CGFloat, style:Style) -> CAShapeLayer{
       //for height you need to get the adjecentLength
       let rect:CGRect = CGRect.init(origin:.init(x:rect.origin.x,y:rect.origin.y+arrowHeight),size:rect.size)
       let adjacentSide = TriangleMath.adjacent(opposite: arrowHeight)
@@ -26,16 +25,16 @@ extension PopoverTag{
          let path:CGMutablePath = CGMutablePath()
          
          path.move(to: p4)
-         path.addArc(tangent1End: p1, tangent2End: p2, radius: radius)
+         path.addArc(tangent1End: p1, tangent2End: p2, radius: style.radius)
          path.addLine(to: a)
          path.addLine(to: b)
          path.addLine(to: c)
-         path.addArc(tangent1End: p2, tangent2End: p3, radius: radius)
+         path.addArc(tangent1End: p2, tangent2End: p3, radius: style.radius)
          //         path.addLine(to: p2)
          //         path.addLine(to: p3)
-         path.addArc(tangent1End: p3, tangent2End: p4, radius: radius)
+         path.addArc(tangent1End: p3, tangent2End: p4, radius: style.radius)
          //         path.addLine(to: p4)
-         path.addArc(tangent1End: p4, tangent2End: p1, radius: radius)
+         path.addArc(tangent1End: p4, tangent2End: p1, radius: style.radius)
          path.closeSubpath()
          return path
       }()
