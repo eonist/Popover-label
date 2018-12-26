@@ -28,18 +28,10 @@ class PopoverTag:UIView{
       Swift.print("self.bounds:  \(self.bounds)")
       _ = backgroundLayer
       _ = textLabel
-      if let path = backgroundLayer.path {
+      if let path = backgroundLayer.path {//TODO: ⚠️️ store layer and path in a tuple
          PopoverTag.applyShadow(view: self, path: path)
       }
       
       //UIBezierPath(roundedRect: view.bounds, cornerRadius: view.layer.cornerRadius).cgPath
    }
 }
-/**
- * Style
- */
-extension PopoverTag{
-   static let defaultStyle:Style = (20,#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1),#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
-   typealias Style = (radius:CGFloat,color:UIColor,textColor:UIColor)
-}
-
