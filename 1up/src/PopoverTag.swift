@@ -3,7 +3,7 @@ import With
 
 class PopoverTag:UIView{
    /*Variables*/
-   let arrowHeight:CGFloat
+   let arrowHeight:CGFloat//TODO: ⚠️️ put the arrowheight in the style?
    let style:Style
    /*UI*/
    lazy var backgroundLayer:CAShapeLayer = createBackgroundLayer()

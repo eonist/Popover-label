@@ -11,8 +11,8 @@ extension PopoverTag{
     */
    func createTextLabel() -> UILabel{
       return with(.init()) {
-         $0.text = "+1 Like"
-         $0.font = .systemFont(ofSize: 32)
+         $0.text = "♥ 4"
+         $0.font = .systemFont(ofSize: 20)
          $0.textColor = .white
          $0.textAlignment = .center
 //         $0.backgroundColor = .orange/*debug*/
