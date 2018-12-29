@@ -9,29 +9,28 @@ extension PopoverTag{
    /**
     * Creates text label
     */
-   func createTextLabel() -> UILabel{
+   func createTextLabel() -> UILabel {
       return with(.init()) {
-         $0.text = "♥ 4"
-         $0.font = .systemFont(ofSize: 20)
-         $0.textColor = .white
+         $0.text = self.text
+         $0.font = style.text.font
+         $0.textColor = style.text.textColor
          $0.textAlignment = .center
 //         $0.backgroundColor = .orange/*debug*/
          addSubview($0)
-         $0.activateAnchorAndSize { view in
-            let a = Constraint.anchor(view, to: self, align: .centerCenter, alignTo: .centerCenter,offset:.init(x:0,y:arrowHeight))
-            let s = Constraint.size(view, to:self)
-            return (a,s)
+         $0.activateAnchor { view in
+            let a = Constraint.anchor(view, to: self, align: .centerCenter, alignTo: .centerCenter,offset:.init(x:0,y:style.arrow.height))
+//            let s = Constraint.size(view, size: .init(width:100,height:20))
+            return a//(a,s)
          }
+         Swift.print("$0.frame.height:  \($0.frame.height)")
       }
    }
    /**
     * Creates the background layer
     */
    func createBackgroundLayer() -> CAShapeLayer{
-      let shapeLayer = PopoverTag.createArrowBox(rect: self.bounds, arrowHeight: arrowHeight, style:style)
-      self.layer.addSublayer(shapeLayer)
+      let shapeLayer = PopoverTag.createArrowBox(rect: self.bounds, arrowHeight: style.arrow.height, style:style)
+      self.layer.insertSublayer(shapeLayer, at: 0)/*⚠️️ If you just add the sublayer it will be above even subviews*/
       return shapeLayer
    }
-   
 }
-

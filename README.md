@@ -14,4 +14,5 @@ Popover tag
 - [x] Uses AutoLayout
 - [x] Aesthetically accurate equilateral based arrow
 - [ ] Customizable through extension overridable methods
-- [ ] animates from arrow origin
+- [x] animates from arrow origin
+- [ ] Rounded arrow 

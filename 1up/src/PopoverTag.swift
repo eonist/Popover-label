@@ -1,37 +1,26 @@
 import UIKit
 import With
+import Spatial
 
 class PopoverTag:UIView{
    /*Variables*/
-   let arrowHeight:CGFloat//TODO: ⚠️️ put the arrowheight in the style?
    let style:Style
+   let text:String
    /*UI*/
    lazy var backgroundLayer:CAShapeLayer = createBackgroundLayer()
    lazy var textLabel:UILabel = createTextLabel()
    /*Init*/
-   init(frame: CGRect, arrowHeight:CGFloat, style:Style = PopoverTag.defaultStyle) {
-      self.arrowHeight = arrowHeight
+   init(text:String, style:Style = PopoverTag.defaultStyle) {
       self.style = style
-      super.init(frame: frame)
+      self.text = text
+      super.init(frame: .zero)
+//      self.layer.backgroundColor = UIColor.blue.cgColor
+      _ = textLabel
    }
    /**
     * Boilerplate
     */
    required init?(coder aDecoder: NSCoder) {
       fatalError("init(coder:) has not been implemented")
-   }
-   /**
-    * layoutSubviews
-    */
-   override func layoutSubviews() {
-      super.layoutSubviews()
-      Swift.print("self.bounds:  \(self.bounds)")
-      _ = backgroundLayer
-      _ = textLabel
-      if let path = backgroundLayer.path {//TODO: ⚠️️ store layer and path in a tuple
-         PopoverTag.applyShadow(view: self, path: path)
-      }
-      
-      //UIBezierPath(roundedRect: view.bounds, cornerRadius: view.layer.cornerRadius).cgPath
    }
 }

@@ -1,11 +1,9 @@
-
 import UIKit
 /**
- * TODO: ⚠️️ Reach goal: smothed arrow corners
- * TODO: ⚠️️ more complex style, that has font color, size, margins etc
- * TODO: ⚠️️ add the minWidth 🚫, margins, parent sizes to child content size
+ * TODO: ⚠️️ Reach goal: smothed arrow corners ✅
+ * TODO: ⚠️️ more complex style, that has font color, size, margins etc ✅
+ * TODO: ⚠️️ add the minWidth 🚫, margins, parent sizes to child content size 👈
  */
-
 class ViewController: UIViewController {
    lazy var customView:CustomShapedShadowView = createCustomShapedShadowView()
    override func viewDidLoad() {

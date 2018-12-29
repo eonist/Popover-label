@@ -69,40 +69,23 @@ extension ViewController{
     * Creates a popover tag
     */
    func createPopoverTag(){
-      let arrowHeight:CGFloat = 8
-//      let rect:CGRect = {
-//         let size:CGSize = .init(width:200,height:100+arrowHeight)
-////         let position:CGPoint = .init(x:UIScreen.main.bounds.width/2-size.width/2, y:UIScreen.main.bounds.height/2-size.height/2)
-//         return .init(origin:.zero, size:size)
-//      }()
-      let size:CGSize = .init(width:64,height:28)
-      let tagView:PopoverTag = .init(frame:.zero,arrowHeight:arrowHeight,style:PopoverTag.defaultStyle)
+//      let arrowHeight:CGFloat = PopoverTag.defaultStyle.arrow.height
+//      let size:CGSize = .init(width:64,height:22)
+      let tagView:PopoverTag = .init(text:"♥ 4",style:PopoverTag.defaultStyle)
       self.view.addSubview(tagView)
-      tagView.activateAnchorAndSize { view in
+      tagView.activateConstraint { view in
          let a = Constraint.anchor(view, to: self.view, align: .topCenter, alignTo: .topCenter, offset:.init(x:0,y:UIApplication.shared.statusBarFrame.height))
-         let s = Constraint.size(view, size: .init(width:size.width,height:size.height+arrowHeight))
-         return (a,s)
+//         let s = Constraint.size(view, size: .init(width:0,height:22+arrowHeight))
+//         let h = Constraint.height(view, height: 22+arrowHeight)
+         return [a.x,a.y]//(a,s)
       }
-      Swift.print("tagView.transform:  \(tagView.transform)")
+//      Swift.print("tagView.transform:  \(tagView.transform)")
       /*tagView.transform = */
-      //tagView.transform.scaleFromPoint( scale: .init(x:0.5,y:0.5), pivot: .init(x:0,y:-(100+arrowHeight)/2))
-      tagView.transform = CGAffineTransformParser.scaleFromPoint(transform: CGAffineTransform.identity, scale: .init(x:0.5,y:0.5), pivot: .init(x:0,y:-(size.height+arrowHeight)/2))
-      Swift.print("tagView.transform:  \(tagView.transform)")
-      tagView.alpha = 0
-      func outro(){
-         UIView.animate(withDuration: 0.15, delay: 1.0, options: [.allowUserInteraction, .curveEaseOut], animations: {
-//            tagView.transform.scaleFromPoint( scale: .init(x:0.5,y:0.5), pivot: .zero)
-            tagView.transform = CGAffineTransformParser.scaleFromPoint(transform: tagView.transform, scale: .init(x:0.5,y:0.5), pivot: .init(x:0,y:-(size.height+arrowHeight)/2))
-            tagView.alpha = 0
-         },completion:{flag in intro();Swift.print("outro done")})
-      }
-      func intro(){
-         UIView.animate(withDuration: 0.15, delay: 1.0, options: [.allowUserInteraction, .curveEaseOut], animations: {
-            tagView.transform = CGAffineTransformParser.scaleFromPoint(transform: CGAffineTransform.identity, scale: .init(x:1,y:1), pivot: .init(x:0,y:-(size.height+arrowHeight)/2))
-            tagView.alpha = 1
-         },completion:{flag in outro();Swift.print("intro done")})
-      }
-      intro()
+      
+      tagView.hide()
+      tagView.intro()
+//      tagView.hide()
+//      tagView.show()
       //tagView.backgroundColor = .lightGray/*Debug*/
    }
 }
