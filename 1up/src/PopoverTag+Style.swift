@@ -19,3 +19,11 @@ extension PopoverTag{
    typealias ArrowStyle = (height:CGFloat,isRounded:Bool)
    typealias ShadowStyle = (color:UIColor,opacity:Float,offset:CGSize,radius:CGFloat)
 }
+/**
+ * Differentiating between having the arrow on the top and the bottom
+ */
+extension PopoverTag {
+   enum AlignmentType {
+      case top, bottom
+   }
+}
