@@ -65,27 +65,5 @@ extension ViewController{
       CGPathModifier.fill(shape: shapeLayer, cgPath: cgPath, fillColor: .green)
       self.view.layer.addSublayer(shapeLayer)
    }
-   /**
-    * Creates a popover tag
-    */
-   func createPopoverTag(){
-//      let arrowHeight:CGFloat = PopoverTag.defaultStyle.arrow.height
-//      let size:CGSize = .init(width:64,height:22)
-      let tagView:PopoverTag = .init(text:"♥ 4",style:PopoverTag.defaultStyle,alignment:.bottom)
-      self.view.addSubview(tagView)
-      tagView.activateConstraint { view in
-         let a = Constraint.anchor(view, to: self.view, align: .bottomCenter, alignTo: .bottomCenter, offset:.init(x:0,y:-UIApplication.shared.statusBarFrame.height))
-//         let s = Constraint.size(view, size: .init(width:0,height:22+arrowHeight))
-//         let h = Constraint.height(view, height: 22+arrowHeight)
-         return [a.x,a.y]//(a,s)
-      }
-//      Swift.print("tagView.transform:  \(tagView.transform)")
-      /*tagView.transform = */
-      
-      tagView.hide()
-      tagView.intro()
-//      tagView.hide()
-//      tagView.show()
-      //tagView.backgroundColor = .lightGray/*Debug*/
-   }
+   
 }
