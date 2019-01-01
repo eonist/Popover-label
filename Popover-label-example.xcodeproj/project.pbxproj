@@ -12,12 +12,6 @@
 		F110DF7321DBA41800096BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F110DF7121DBA41800096BC0 /* LaunchScreen.storyboard */; };
 		F110DF7C21DBA54B00096BC0 /* TBC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF7A21DBA54B00096BC0 /* TBC+Extension.swift */; };
 		F110DF7D21DBA54B00096BC0 /* AppDelegate+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF7B21DBA54B00096BC0 /* AppDelegate+Create.swift */; };
-		F110DF8121DBA5CA00096BC0 /* Spatial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF7E21DBA5C900096BC0 /* Spatial.framework */; };
-		F110DF8221DBA5CA00096BC0 /* Spatial.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF7E21DBA5C900096BC0 /* Spatial.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F110DF8321DBA5CA00096BC0 /* With.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF7F21DBA5C900096BC0 /* With.framework */; };
-		F110DF8421DBA5CA00096BC0 /* With.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF7F21DBA5C900096BC0 /* With.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F110DF8521DBA5CA00096BC0 /* SimpleTimerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF8021DBA5C900096BC0 /* SimpleTimerLib.framework */; };
-		F110DF8621DBA5CA00096BC0 /* SimpleTimerLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF8021DBA5C900096BC0 /* SimpleTimerLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F110DFC921DBAAE800096BC0 /* PopoverLabelLib.h in Headers */ = {isa = PBXBuildFile; fileRef = F110DFC721DBAAE800096BC0 /* PopoverLabelLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F110DFCC21DBAAE800096BC0 /* PopoverLabelLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DFC521DBAAE800096BC0 /* PopoverLabelLib.framework */; };
 		F110DFCD21DBAAE800096BC0 /* PopoverLabelLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F110DFC521DBAAE800096BC0 /* PopoverLabelLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -32,9 +26,9 @@
 		F110DFD921DBAB0000096BC0 /* PopoverLabel+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9221DBA5E300096BC0 /* PopoverLabel+Layout.swift */; };
 		F110DFDA21DBAB0000096BC0 /* PopoverLabel+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9321DBA5E300096BC0 /* PopoverLabel+Animation.swift */; };
 		F110DFDB21DBAB0000096BC0 /* PopoverLabel+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9421DBA5E300096BC0 /* PopoverLabel+Create.swift */; };
-		F110DFDC21DBAB1B00096BC0 /* SimpleTimerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF8021DBA5C900096BC0 /* SimpleTimerLib.framework */; };
-		F110DFDD21DBAB1B00096BC0 /* Spatial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF7E21DBA5C900096BC0 /* Spatial.framework */; };
-		F110DFDE21DBAB1B00096BC0 /* With.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF7F21DBA5C900096BC0 /* With.framework */; };
+		F17E0E1C21DBC0D800EE3027 /* Spatial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17E0E1921DBC0D700EE3027 /* Spatial.framework */; };
+		F17E0E1D21DBC0D800EE3027 /* With.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17E0E1A21DBC0D700EE3027 /* With.framework */; };
+		F17E0E1E21DBC0D800EE3027 /* SimpleTimerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17E0E1B21DBC0D800EE3027 /* SimpleTimerLib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F110DF8621DBA5CA00096BC0 /* SimpleTimerLib.framework in Embed Frameworks */,
-				F110DF8421DBA5CA00096BC0 /* With.framework in Embed Frameworks */,
 				F110DFCD21DBAAE800096BC0 /* PopoverLabelLib.framework in Embed Frameworks */,
-				F110DF8221DBA5CA00096BC0 /* Spatial.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,9 +63,6 @@
 		F110DF7421DBA41800096BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F110DF7A21DBA54B00096BC0 /* TBC+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TBC+Extension.swift"; sourceTree = "<group>"; };
 		F110DF7B21DBA54B00096BC0 /* AppDelegate+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Create.swift"; sourceTree = "<group>"; };
-		F110DF7E21DBA5C900096BC0 /* Spatial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spatial.framework; path = Carthage/Build/iOS/Spatial.framework; sourceTree = "<group>"; };
-		F110DF7F21DBA5C900096BC0 /* With.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = With.framework; path = Carthage/Build/iOS/With.framework; sourceTree = "<group>"; };
-		F110DF8021DBA5C900096BC0 /* SimpleTimerLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimpleTimerLib.framework; path = Carthage/Build/iOS/SimpleTimerLib.framework; sourceTree = "<group>"; };
 		F110DF8A21DBA5E300096BC0 /* Util+CGPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Util+CGPath.swift"; sourceTree = "<group>"; };
 		F110DF8B21DBA5E300096BC0 /* Util+CGShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Util+CGShape.swift"; sourceTree = "<group>"; };
 		F110DF8C21DBA5E300096BC0 /* Util+CGAffineTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Util+CGAffineTransform.swift"; sourceTree = "<group>"; };
@@ -89,6 +77,9 @@
 		F110DFC521DBAAE800096BC0 /* PopoverLabelLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopoverLabelLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F110DFC721DBAAE800096BC0 /* PopoverLabelLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopoverLabelLib.h; sourceTree = "<group>"; };
 		F110DFC821DBAAE800096BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F17E0E1921DBC0D700EE3027 /* Spatial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spatial.framework; path = Carthage/Build/iOS/Spatial.framework; sourceTree = "<group>"; };
+		F17E0E1A21DBC0D700EE3027 /* With.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = With.framework; path = Carthage/Build/iOS/With.framework; sourceTree = "<group>"; };
+		F17E0E1B21DBC0D800EE3027 /* SimpleTimerLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimpleTimerLib.framework; path = Carthage/Build/iOS/SimpleTimerLib.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F110DF8521DBA5CA00096BC0 /* SimpleTimerLib.framework in Frameworks */,
-				F110DF8321DBA5CA00096BC0 /* With.framework in Frameworks */,
 				F110DFCC21DBAAE800096BC0 /* PopoverLabelLib.framework in Frameworks */,
-				F110DF8121DBA5CA00096BC0 /* Spatial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,9 +95,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F110DFDC21DBAB1B00096BC0 /* SimpleTimerLib.framework in Frameworks */,
-				F110DFDD21DBAB1B00096BC0 /* Spatial.framework in Frameworks */,
-				F110DFDE21DBAB1B00096BC0 /* With.framework in Frameworks */,
+				F17E0E1C21DBC0D800EE3027 /* Spatial.framework in Frameworks */,
+				F17E0E1D21DBC0D800EE3027 /* With.framework in Frameworks */,
+				F17E0E1E21DBC0D800EE3027 /* SimpleTimerLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,9 +107,6 @@
 		F110DF5C21DBA41400096BC0 = {
 			isa = PBXGroup;
 			children = (
-				F110DF8021DBA5C900096BC0 /* SimpleTimerLib.framework */,
-				F110DF7E21DBA5C900096BC0 /* Spatial.framework */,
-				F110DF7F21DBA5C900096BC0 /* With.framework */,
 				F110DF6721DBA41500096BC0 /* Popover-label-example */,
 				F110DFC621DBAAE800096BC0 /* PopoverLabelLib */,
 				F110DF6621DBA41500096BC0 /* Products */,
@@ -180,6 +165,9 @@
 		F110DFB121DBAA0900096BC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F17E0E1B21DBC0D800EE3027 /* SimpleTimerLib.framework */,
+				F17E0E1921DBC0D700EE3027 /* Spatial.framework */,
+				F17E0E1A21DBC0D700EE3027 /* With.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

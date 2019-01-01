@@ -1,0 +1,11 @@
+framework module PopoverLabelLib {
+  umbrella header "PopoverLabelLib.h"
+
+  export *
+  module * { export * }
+}
+
+module PopoverLabelLib.Swift {
+    header "PopoverLabelLib-Swift.h"
+    requires objc
+}
