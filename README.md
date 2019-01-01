@@ -1,3 +1,7 @@
+![mit](https://img.shields.io/badge/License-MIT-brightgreen.svg) ![platform](https://img.shields.io/badge/Platform-iOS-blue.svg) ![Lang](https://img.shields.io/badge/Language-Swift%204.2-orange.svg)
+[![codebeat badge](https://codebeat.co/badges/b4ee0d27-b00c-464b-b9b2-c9906cb6c19f)](https://codebeat.co/projects/github-com-eonist-spatial-master)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
 # Popover-label
 
 <img width="320" alt="img" src="https://github.com/stylekit/img/blob/master/popover-label-2.gif?raw=true">
@@ -28,5 +32,8 @@ Popover label for iOS
 
 ### Example:
 ```swift
-/*Example-Code goes here*/
+let label:PopoverLabel = .init(text:"♥ 4",style:PopoverLabel.defaultStyle,alignment:.bottom)
+self.view.addSubview(label)
+label.hide()/*Set init state to hidden*/
+label.intro()/*Begins the looping animation*/
 ```
