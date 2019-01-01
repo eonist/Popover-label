@@ -18,32 +18,32 @@
 		F110DF8421DBA5CA00096BC0 /* With.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF7F21DBA5C900096BC0 /* With.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F110DF8521DBA5CA00096BC0 /* SimpleTimerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF8021DBA5C900096BC0 /* SimpleTimerLib.framework */; };
 		F110DF8621DBA5CA00096BC0 /* SimpleTimerLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF8021DBA5C900096BC0 /* SimpleTimerLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F110DFA921DBAA0100096BC0 /* Popover_label.h in Headers */ = {isa = PBXBuildFile; fileRef = F110DFA721DBAA0100096BC0 /* Popover_label.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F110DFAC21DBAA0100096BC0 /* Popover_label.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DFA521DBAA0000096BC0 /* Popover_label.framework */; };
-		F110DFAD21DBAA0100096BC0 /* Popover_label.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F110DFA521DBAA0000096BC0 /* Popover_label.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F110DFB221DBAA0900096BC0 /* SimpleTimerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF8021DBA5C900096BC0 /* SimpleTimerLib.framework */; };
-		F110DFB321DBAA0E00096BC0 /* Spatial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF7E21DBA5C900096BC0 /* Spatial.framework */; };
-		F110DFB421DBAA0E00096BC0 /* With.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF7F21DBA5C900096BC0 /* With.framework */; };
-		F110DFB521DBAA4100096BC0 /* PopoverTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9121DBA5E300096BC0 /* PopoverTag.swift */; };
-		F110DFB621DBAA4100096BC0 /* PopoverTag+Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF8E21DBA5E300096BC0 /* PopoverTag+Background.swift */; };
-		F110DFB721DBAA4100096BC0 /* PopoverTag+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF8F21DBA5E300096BC0 /* PopoverTag+Shadow.swift */; };
-		F110DFB821DBAA4100096BC0 /* PopoverTag+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9021DBA5E300096BC0 /* PopoverTag+Style.swift */; };
-		F110DFB921DBAA4100096BC0 /* PopoverTag+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9221DBA5E300096BC0 /* PopoverTag+Layout.swift */; };
-		F110DFBA21DBAA4100096BC0 /* PopoverTag+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9321DBA5E300096BC0 /* PopoverTag+Animation.swift */; };
-		F110DFBB21DBAA4100096BC0 /* PopoverTag+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9421DBA5E300096BC0 /* PopoverTag+Create.swift */; };
-		F110DFBC21DBAA4600096BC0 /* Util+CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF8A21DBA5E300096BC0 /* Util+CGPath.swift */; };
-		F110DFBD21DBAA4600096BC0 /* Util+CGShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF8B21DBA5E300096BC0 /* Util+CGShape.swift */; };
-		F110DFBE21DBAA4600096BC0 /* Util+CGAffineTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF8C21DBA5E300096BC0 /* Util+CGAffineTransform.swift */; };
-		F110DFBF21DBAA4600096BC0 /* Util+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF8D21DBA5E300096BC0 /* Util+Math.swift */; };
+		F110DFC921DBAAE800096BC0 /* PopoverLabelLib.h in Headers */ = {isa = PBXBuildFile; fileRef = F110DFC721DBAAE800096BC0 /* PopoverLabelLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F110DFCC21DBAAE800096BC0 /* PopoverLabelLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DFC521DBAAE800096BC0 /* PopoverLabelLib.framework */; };
+		F110DFCD21DBAAE800096BC0 /* PopoverLabelLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F110DFC521DBAAE800096BC0 /* PopoverLabelLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F110DFD121DBAB0000096BC0 /* Util+CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF8A21DBA5E300096BC0 /* Util+CGPath.swift */; };
+		F110DFD221DBAB0000096BC0 /* Util+CGShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF8B21DBA5E300096BC0 /* Util+CGShape.swift */; };
+		F110DFD321DBAB0000096BC0 /* Util+CGAffineTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF8C21DBA5E300096BC0 /* Util+CGAffineTransform.swift */; };
+		F110DFD421DBAB0000096BC0 /* Util+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF8D21DBA5E300096BC0 /* Util+Math.swift */; };
+		F110DFD521DBAB0000096BC0 /* PopoverLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9121DBA5E300096BC0 /* PopoverLabel.swift */; };
+		F110DFD621DBAB0000096BC0 /* PopoverLabel+Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF8E21DBA5E300096BC0 /* PopoverLabel+Background.swift */; };
+		F110DFD721DBAB0000096BC0 /* PopoverLabel+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF8F21DBA5E300096BC0 /* PopoverLabel+Shadow.swift */; };
+		F110DFD821DBAB0000096BC0 /* PopoverLabel+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9021DBA5E300096BC0 /* PopoverLabel+Style.swift */; };
+		F110DFD921DBAB0000096BC0 /* PopoverLabel+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9221DBA5E300096BC0 /* PopoverLabel+Layout.swift */; };
+		F110DFDA21DBAB0000096BC0 /* PopoverLabel+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9321DBA5E300096BC0 /* PopoverLabel+Animation.swift */; };
+		F110DFDB21DBAB0000096BC0 /* PopoverLabel+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9421DBA5E300096BC0 /* PopoverLabel+Create.swift */; };
+		F110DFDC21DBAB1B00096BC0 /* SimpleTimerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF8021DBA5C900096BC0 /* SimpleTimerLib.framework */; };
+		F110DFDD21DBAB1B00096BC0 /* Spatial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF7E21DBA5C900096BC0 /* Spatial.framework */; };
+		F110DFDE21DBAB1B00096BC0 /* With.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DF7F21DBA5C900096BC0 /* With.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F110DFAA21DBAA0100096BC0 /* PBXContainerItemProxy */ = {
+		F110DFCA21DBAAE800096BC0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F110DF5D21DBA41400096BC0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F110DFA421DBAA0000096BC0;
-			remoteInfo = "Popover-label";
+			remoteGlobalIDString = F110DFC421DBAAE800096BC0;
+			remoteInfo = PopoverLabelLib;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -55,8 +55,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F110DF8621DBA5CA00096BC0 /* SimpleTimerLib.framework in Embed Frameworks */,
-				F110DFAD21DBAA0100096BC0 /* Popover_label.framework in Embed Frameworks */,
 				F110DF8421DBA5CA00096BC0 /* With.framework in Embed Frameworks */,
+				F110DFCD21DBAAE800096BC0 /* PopoverLabelLib.framework in Embed Frameworks */,
 				F110DF8221DBA5CA00096BC0 /* Spatial.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -79,16 +79,16 @@
 		F110DF8B21DBA5E300096BC0 /* Util+CGShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Util+CGShape.swift"; sourceTree = "<group>"; };
 		F110DF8C21DBA5E300096BC0 /* Util+CGAffineTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Util+CGAffineTransform.swift"; sourceTree = "<group>"; };
 		F110DF8D21DBA5E300096BC0 /* Util+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Util+Math.swift"; sourceTree = "<group>"; };
-		F110DF8E21DBA5E300096BC0 /* PopoverTag+Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopoverTag+Background.swift"; sourceTree = "<group>"; };
-		F110DF8F21DBA5E300096BC0 /* PopoverTag+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopoverTag+Shadow.swift"; sourceTree = "<group>"; };
-		F110DF9021DBA5E300096BC0 /* PopoverTag+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopoverTag+Style.swift"; sourceTree = "<group>"; };
-		F110DF9121DBA5E300096BC0 /* PopoverTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverTag.swift; sourceTree = "<group>"; };
-		F110DF9221DBA5E300096BC0 /* PopoverTag+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopoverTag+Layout.swift"; sourceTree = "<group>"; };
-		F110DF9321DBA5E300096BC0 /* PopoverTag+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopoverTag+Animation.swift"; sourceTree = "<group>"; };
-		F110DF9421DBA5E300096BC0 /* PopoverTag+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopoverTag+Create.swift"; sourceTree = "<group>"; };
-		F110DFA521DBAA0000096BC0 /* Popover_label.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Popover_label.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F110DFA721DBAA0100096BC0 /* Popover_label.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Popover_label.h; sourceTree = "<group>"; };
-		F110DFA821DBAA0100096BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F110DF8E21DBA5E300096BC0 /* PopoverLabel+Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopoverLabel+Background.swift"; sourceTree = "<group>"; };
+		F110DF8F21DBA5E300096BC0 /* PopoverLabel+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopoverLabel+Shadow.swift"; sourceTree = "<group>"; };
+		F110DF9021DBA5E300096BC0 /* PopoverLabel+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopoverLabel+Style.swift"; sourceTree = "<group>"; };
+		F110DF9121DBA5E300096BC0 /* PopoverLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverLabel.swift; sourceTree = "<group>"; };
+		F110DF9221DBA5E300096BC0 /* PopoverLabel+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopoverLabel+Layout.swift"; sourceTree = "<group>"; };
+		F110DF9321DBA5E300096BC0 /* PopoverLabel+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopoverLabel+Animation.swift"; sourceTree = "<group>"; };
+		F110DF9421DBA5E300096BC0 /* PopoverLabel+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopoverLabel+Create.swift"; sourceTree = "<group>"; };
+		F110DFC521DBAAE800096BC0 /* PopoverLabelLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopoverLabelLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F110DFC721DBAAE800096BC0 /* PopoverLabelLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopoverLabelLib.h; sourceTree = "<group>"; };
+		F110DFC821DBAAE800096BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,19 +97,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				F110DF8521DBA5CA00096BC0 /* SimpleTimerLib.framework in Frameworks */,
-				F110DFAC21DBAA0100096BC0 /* Popover_label.framework in Frameworks */,
 				F110DF8321DBA5CA00096BC0 /* With.framework in Frameworks */,
+				F110DFCC21DBAAE800096BC0 /* PopoverLabelLib.framework in Frameworks */,
 				F110DF8121DBA5CA00096BC0 /* Spatial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F110DFA221DBAA0000096BC0 /* Frameworks */ = {
+		F110DFC221DBAAE800096BC0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F110DFB221DBAA0900096BC0 /* SimpleTimerLib.framework in Frameworks */,
-				F110DFB321DBAA0E00096BC0 /* Spatial.framework in Frameworks */,
-				F110DFB421DBAA0E00096BC0 /* With.framework in Frameworks */,
+				F110DFDC21DBAB1B00096BC0 /* SimpleTimerLib.framework in Frameworks */,
+				F110DFDD21DBAB1B00096BC0 /* Spatial.framework in Frameworks */,
+				F110DFDE21DBAB1B00096BC0 /* With.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +123,7 @@
 				F110DF7E21DBA5C900096BC0 /* Spatial.framework */,
 				F110DF7F21DBA5C900096BC0 /* With.framework */,
 				F110DF6721DBA41500096BC0 /* Popover-label-example */,
-				F110DFA621DBAA0000096BC0 /* Popover-label */,
+				F110DFC621DBAAE800096BC0 /* PopoverLabelLib */,
 				F110DF6621DBA41500096BC0 /* Products */,
 				F110DFB121DBAA0900096BC0 /* Frameworks */,
 			);
@@ -133,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				F110DF6521DBA41500096BC0 /* Popover-label-example.app */,
-				F110DFA521DBAA0000096BC0 /* Popover_label.framework */,
+				F110DFC521DBAAE800096BC0 /* PopoverLabelLib.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,13 +155,13 @@
 			isa = PBXGroup;
 			children = (
 				F110DF8921DBA5E300096BC0 /* util */,
-				F110DF9121DBA5E300096BC0 /* PopoverTag.swift */,
-				F110DF8E21DBA5E300096BC0 /* PopoverTag+Background.swift */,
-				F110DF8F21DBA5E300096BC0 /* PopoverTag+Shadow.swift */,
-				F110DF9021DBA5E300096BC0 /* PopoverTag+Style.swift */,
-				F110DF9221DBA5E300096BC0 /* PopoverTag+Layout.swift */,
-				F110DF9321DBA5E300096BC0 /* PopoverTag+Animation.swift */,
-				F110DF9421DBA5E300096BC0 /* PopoverTag+Create.swift */,
+				F110DF9121DBA5E300096BC0 /* PopoverLabel.swift */,
+				F110DF8E21DBA5E300096BC0 /* PopoverLabel+Background.swift */,
+				F110DF8F21DBA5E300096BC0 /* PopoverLabel+Shadow.swift */,
+				F110DF9021DBA5E300096BC0 /* PopoverLabel+Style.swift */,
+				F110DF9221DBA5E300096BC0 /* PopoverLabel+Layout.swift */,
+				F110DF9321DBA5E300096BC0 /* PopoverLabel+Animation.swift */,
+				F110DF9421DBA5E300096BC0 /* PopoverLabel+Create.swift */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -177,16 +177,6 @@
 			path = util;
 			sourceTree = "<group>";
 		};
-		F110DFA621DBAA0000096BC0 /* Popover-label */ = {
-			isa = PBXGroup;
-			children = (
-				F110DF8821DBA5E300096BC0 /* src */,
-				F110DFA721DBAA0100096BC0 /* Popover_label.h */,
-				F110DFA821DBAA0100096BC0 /* Info.plist */,
-			);
-			path = "Popover-label";
-			sourceTree = "<group>";
-		};
 		F110DFB121DBAA0900096BC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,14 +184,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F110DFC621DBAAE800096BC0 /* PopoverLabelLib */ = {
+			isa = PBXGroup;
+			children = (
+				F110DF8821DBA5E300096BC0 /* src */,
+				F110DFC721DBAAE800096BC0 /* PopoverLabelLib.h */,
+				F110DFC821DBAAE800096BC0 /* Info.plist */,
+			);
+			path = PopoverLabelLib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		F110DFA021DBAA0000096BC0 /* Headers */ = {
+		F110DFC021DBAAE800096BC0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F110DFA921DBAA0100096BC0 /* Popover_label.h in Headers */,
+				F110DFC921DBAAE800096BC0 /* PopoverLabelLib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,29 +220,29 @@
 			buildRules = (
 			);
 			dependencies = (
-				F110DFAB21DBAA0100096BC0 /* PBXTargetDependency */,
+				F110DFCB21DBAAE800096BC0 /* PBXTargetDependency */,
 			);
 			name = "Popover-label-example";
 			productName = "Popover-label-example";
 			productReference = F110DF6521DBA41500096BC0 /* Popover-label-example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F110DFA421DBAA0000096BC0 /* Popover-label */ = {
+		F110DFC421DBAAE800096BC0 /* PopoverLabelLib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F110DFAE21DBAA0100096BC0 /* Build configuration list for PBXNativeTarget "Popover-label" */;
+			buildConfigurationList = F110DFCE21DBAAE800096BC0 /* Build configuration list for PBXNativeTarget "PopoverLabelLib" */;
 			buildPhases = (
-				F110DFA021DBAA0000096BC0 /* Headers */,
-				F110DFA121DBAA0000096BC0 /* Sources */,
-				F110DFA221DBAA0000096BC0 /* Frameworks */,
-				F110DFA321DBAA0000096BC0 /* Resources */,
+				F110DFC021DBAAE800096BC0 /* Headers */,
+				F110DFC121DBAAE800096BC0 /* Sources */,
+				F110DFC221DBAAE800096BC0 /* Frameworks */,
+				F110DFC321DBAAE800096BC0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Popover-label";
-			productName = "Popover-label";
-			productReference = F110DFA521DBAA0000096BC0 /* Popover_label.framework */;
+			name = PopoverLabelLib;
+			productName = PopoverLabelLib;
+			productReference = F110DFC521DBAAE800096BC0 /* PopoverLabelLib.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -258,7 +258,7 @@
 					F110DF6421DBA41500096BC0 = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					F110DFA421DBAA0000096BC0 = {
+					F110DFC421DBAAE800096BC0 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -277,7 +277,7 @@
 			projectRoot = "";
 			targets = (
 				F110DF6421DBA41500096BC0 /* Popover-label-example */,
-				F110DFA421DBAA0000096BC0 /* Popover-label */,
+				F110DFC421DBAAE800096BC0 /* PopoverLabelLib */,
 			);
 		};
 /* End PBXProject section */
@@ -292,7 +292,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F110DFA321DBAA0000096BC0 /* Resources */ = {
+		F110DFC321DBAAE800096BC0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -312,31 +312,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F110DFA121DBAA0000096BC0 /* Sources */ = {
+		F110DFC121DBAAE800096BC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F110DFBB21DBAA4100096BC0 /* PopoverTag+Create.swift in Sources */,
-				F110DFB821DBAA4100096BC0 /* PopoverTag+Style.swift in Sources */,
-				F110DFB721DBAA4100096BC0 /* PopoverTag+Shadow.swift in Sources */,
-				F110DFBF21DBAA4600096BC0 /* Util+Math.swift in Sources */,
-				F110DFB621DBAA4100096BC0 /* PopoverTag+Background.swift in Sources */,
-				F110DFBC21DBAA4600096BC0 /* Util+CGPath.swift in Sources */,
-				F110DFBD21DBAA4600096BC0 /* Util+CGShape.swift in Sources */,
-				F110DFB521DBAA4100096BC0 /* PopoverTag.swift in Sources */,
-				F110DFBE21DBAA4600096BC0 /* Util+CGAffineTransform.swift in Sources */,
-				F110DFB921DBAA4100096BC0 /* PopoverTag+Layout.swift in Sources */,
-				F110DFBA21DBAA4100096BC0 /* PopoverTag+Animation.swift in Sources */,
+				F110DFDB21DBAB0000096BC0 /* PopoverLabel+Create.swift in Sources */,
+				F110DFD921DBAB0000096BC0 /* PopoverLabel+Layout.swift in Sources */,
+				F110DFD321DBAB0000096BC0 /* Util+CGAffineTransform.swift in Sources */,
+				F110DFD421DBAB0000096BC0 /* Util+Math.swift in Sources */,
+				F110DFDA21DBAB0000096BC0 /* PopoverLabel+Animation.swift in Sources */,
+				F110DFD621DBAB0000096BC0 /* PopoverLabel+Background.swift in Sources */,
+				F110DFD521DBAB0000096BC0 /* PopoverLabel.swift in Sources */,
+				F110DFD821DBAB0000096BC0 /* PopoverLabel+Style.swift in Sources */,
+				F110DFD721DBAB0000096BC0 /* PopoverLabel+Shadow.swift in Sources */,
+				F110DFD121DBAB0000096BC0 /* Util+CGPath.swift in Sources */,
+				F110DFD221DBAB0000096BC0 /* Util+CGShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F110DFAB21DBAA0100096BC0 /* PBXTargetDependency */ = {
+		F110DFCB21DBAAE800096BC0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F110DFA421DBAA0000096BC0 /* Popover-label */;
-			targetProxy = F110DFAA21DBAA0100096BC0 /* PBXContainerItemProxy */;
+			target = F110DFC421DBAAE800096BC0 /* PopoverLabelLib */;
+			targetProxy = F110DFCA21DBAAE800096BC0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -512,7 +512,7 @@
 			};
 			name = Release;
 		};
-		F110DFAF21DBAA0100096BC0 /* Debug */ = {
+		F110DFCF21DBAAE800096BC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -526,14 +526,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "Popover-label/Info.plist";
+				INFOPLIST_FILE = PopoverLabelLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.futurelab.Popover-label";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.futurelab.PopoverLabelLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -543,7 +543,7 @@
 			};
 			name = Debug;
 		};
-		F110DFB021DBAA0100096BC0 /* Release */ = {
+		F110DFD021DBAAE800096BC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -557,14 +557,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "Popover-label/Info.plist";
+				INFOPLIST_FILE = PopoverLabelLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.futurelab.Popover-label";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.futurelab.PopoverLabelLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -595,11 +595,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F110DFAE21DBAA0100096BC0 /* Build configuration list for PBXNativeTarget "Popover-label" */ = {
+		F110DFCE21DBAAE800096BC0 /* Build configuration list for PBXNativeTarget "PopoverLabelLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F110DFAF21DBAA0100096BC0 /* Debug */,
-				F110DFB021DBAA0100096BC0 /* Release */,
+				F110DFCF21DBAAE800096BC0 /* Debug */,
+				F110DFD021DBAAE800096BC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

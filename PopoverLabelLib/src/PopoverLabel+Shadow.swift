@@ -3,7 +3,7 @@ import With
 /**
  * Util for applying rounded corners and shadow
  */
-extension PopoverTag{
+extension PopoverLabel{
    /**
     * Shadow
     */

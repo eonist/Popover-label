@@ -2,16 +2,16 @@ import UIKit
 import With
 import Spatial
 
-extension PopoverTag{
+extension PopoverLabel{
    /**
     * layoutSubviews (Called from AutoLayout)
     */
-   override func layoutSubviews() {
+   override open func layoutSubviews() {
       super.layoutSubviews()
       if self.bounds.width > 0 {
          _ = backgroundLayer
          if let path = backgroundLayer.path {//TODO: ⚠️️ store layer and path in a tuple
-            PopoverTag.applyShadow(view:self, path:path, style:style.shadow)
+            PopoverLabel.applyShadow(view:self, path:path, style:style.shadow)
          }
       }
       activatePopViewConstraints()

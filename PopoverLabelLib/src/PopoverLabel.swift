@@ -2,7 +2,7 @@ import UIKit
 import With
 import Spatial
 
-class PopoverTag:UIView{
+open class PopoverLabel:UIView{
    /*Variables*/
    let style:Style
    let text:String
@@ -11,7 +11,7 @@ class PopoverTag:UIView{
    lazy var backgroundLayer:CAShapeLayer = createBackgroundLayer()
    lazy var textLabel:UILabel = createTextLabel()
    /*Init*/
-   init(text:String, style:Style = PopoverTag.defaultStyle, alignment:AlignmentType) {
+   public init(text:String, style:Style = PopoverLabel.defaultStyle, alignment:AlignmentType) {
       self.style = style
       self.text = text
       self.alignment = alignment
@@ -21,7 +21,7 @@ class PopoverTag:UIView{
    /**
     * Boilerplate
     */
-   required init?(coder aDecoder: NSCoder) {
+   required public init?(coder aDecoder: NSCoder) {
       fatalError("init(coder:) has not been implemented")
    }
 }

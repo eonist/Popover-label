@@ -1,38 +1,38 @@
 import UIKit
 
-extension PopoverTag{
+extension PopoverLabel{
    /**
     * Vanishes the label with animation
     */
-   @objc func outro(){
+   @objc open func outro(){
       UIView.animate(withDuration: 0.15, delay: 1.0, options: [.allowUserInteraction, .curveEaseOut], animations: {
          self.hide()
-      },completion:{flag in self.intro();Swift.print("outro done")})
+      },completion:{flag in self.intro()})
    }
    /**
     * Makes the label appear with animation
     */
-   @objc func intro(){
+   @objc open func intro(){
       UIView.animate(withDuration: 0.15, delay: 1.0, options: [.allowUserInteraction, .curveEaseOut], animations: {
          self.show()
-      },completion:{flag in self.outro();Swift.print("intro done")})
+      },completion:{flag in self.outro()})
    }
 }
 /**
  * State
  */
-extension PopoverTag{
+extension PopoverLabel{
    /**
     * Hides label
     */
-   @objc func hide(){
+   @objc open func hide(){
       self.transform = CGAffineTransformParser.scaleFromPoint(transform: self.transform, scale: .init(x:0.5,y:0.5), pivot: pivot)
       self.alpha = 0
    }
    /**
     * Shows label
     */
-   @objc func show(){
+   @objc open func show(){
       self.transform = CGAffineTransformParser.scaleFromPoint(transform: CGAffineTransform.identity, scale: .init(x:1,y:1), pivot: pivot)
       self.alpha = 1
    }
@@ -40,7 +40,7 @@ extension PopoverTag{
 /**
  * Metric calculation
  */
-extension PopoverTag{
+extension PopoverLabel{
    /**
     * Scale from this pivot point in the scaling animation
     */

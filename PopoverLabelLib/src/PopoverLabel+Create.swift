@@ -5,7 +5,7 @@ import Spatial
 /**
  * Create
  */
-extension PopoverTag{
+extension PopoverLabel{
    /**
     * Creates text label
     */
@@ -25,7 +25,7 @@ extension PopoverTag{
     * Creates the background layer
     */
    func createBackgroundLayer() -> CAShapeLayer{
-      let shapeLayer = PopoverTag.createArrowBox(rect: self.bounds,  style:style, alignment: self.alignment)
+      let shapeLayer = PopoverLabel.createArrowBox(rect: self.bounds,  style:style, alignment: self.alignment)
       self.layer.insertSublayer(shapeLayer, at: 0)/*⚠️️ If you just add the sublayer it will be above even subviews*/
       return shapeLayer
    }

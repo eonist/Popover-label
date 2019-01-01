@@ -3,7 +3,7 @@ import With
 /**
  * Util
  */
-extension PopoverTag{
+extension PopoverLabel{
    /**
     * Creates the Arrow box graphics
     */
@@ -35,7 +35,7 @@ extension PopoverTag{
          $0.addArc(tangent1End: p4, tangent2End: p1, radius: style.radius)
          $0.closeSubpath()
       }
-      if alignment == .bottom {PopoverTag.flipPath(rect:rect, cgPath:&cgPath ,height:style.arrow.height)}
+      if alignment == .bottom {PopoverLabel.flipPath(rect:rect, cgPath:&cgPath ,height:style.arrow.height)}
       let shapeLayer:CAShapeLayer = .init()
       CGShapeUtil.fill(shape: shapeLayer, cgPath: cgPath, fillColor: style.color)
       return shapeLayer
@@ -44,7 +44,7 @@ extension PopoverTag{
 /**
  * Utility
  */
-extension PopoverTag {
+extension PopoverLabel {
    /**
     * Rotate path 90deg
     * NOTE: We have to have the height of the entire shape to find the correct pivot

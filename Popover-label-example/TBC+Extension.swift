@@ -1,13 +1,13 @@
 import UIKit
-import With
 import Spatial
+import PopoverLabelLib
 
 extension UITabBarController {
    /**
     * Creates a popover tag
     */
    func createPopoverTag(){
-      let tagView:PopoverTag = .init(text:"♥ 4",style:PopoverTag.defaultStyle,alignment:.bottom)
+      let tagView:PopoverLabel = PopoverLabel.init(text:"♥ 4",style:PopoverLabel.defaultStyle,alignment:.bottom)
       self.view.addSubview(tagView)
       tagView.activateAnchor { view in
          let offset:CGFloat = -self.tabBar.frame.height - UIApplication.shared.statusBarFrame.height/*To get above the tabBar element*/
