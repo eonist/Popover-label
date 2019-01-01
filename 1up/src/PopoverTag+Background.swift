@@ -11,6 +11,7 @@ extension PopoverTag{
       let rect:CGRect = CGRect.init(origin:.init(x:rect.origin.x,y:rect.origin.y+style.arrow.height),size:rect.size)
       let adjacentSide = TriangleMath.adjacent(opposite: style.arrow.height)
       let p1 = CGPoint.init(x:rect.origin.x,y:rect.origin.y)
+      /*Triangle*/
       let a = CGPoint.init(x: p1.x+(rect.width/2)-adjacentSide, y: rect.origin.y )
       let b = CGPoint.init(x: p1.x+(rect.width/2), y: rect.origin.y-style.arrow.height)
       let c = CGPoint.init(x: p1.x+(rect.width/2)+adjacentSide, y: rect.origin.y)
@@ -34,24 +35,26 @@ extension PopoverTag{
          $0.addArc(tangent1End: p4, tangent2End: p1, radius: style.radius)
          $0.closeSubpath()
       }
-      
-      if alignment == .bottom {PopoverTag.flipPath(rect:rect, cgPath:&cgPath ,arrowHeight:style.arrow.height)}
-
+      if alignment == .bottom {PopoverTag.flipPath(rect:rect, cgPath:&cgPath ,height:style.arrow.height)}
       let shapeLayer:CAShapeLayer = .init()
-      CGPathModifier.fill(shape: shapeLayer, cgPath: cgPath, fillColor: style.color)
+      CGShapeUtil.fill(shape: shapeLayer, cgPath: cgPath, fillColor: style.color)
       return shapeLayer
    }
 }
-
+/**
+ * Utility
+ */
 extension PopoverTag {
    /**
     * Rotate path 90deg
+    * NOTE: We have to have the height of the entire shape to find the correct pivot
+    * TODO: ⚠️️ rather use cgPath.boundingBox to flip the path
     */
-   static func flipPath(rect:CGRect, cgPath:inout CGMutablePath,arrowHeight:CGFloat){
-      let offset:CGPoint = .init(x:-rect.width/2,y:-(rect.height+arrowHeight)/2)
+   static func flipPath(rect:CGRect, cgPath:inout CGMutablePath, height:CGFloat){
+      let offset:CGPoint = .init(x:-rect.width/2,y:-(rect.height+height)/2)
       CGPathModifier.translate(path: &cgPath, p: offset)
       CGPathModifier.rotate(path:&cgPath,angle:-CGFloat.pi/1.0)//45deg
-      let reOffset:CGPoint = .init(x:rect.width/2,y:(rect.height+arrowHeight)/2)
+      let reOffset:CGPoint = .init(x:rect.width/2,y:(rect.height+height)/2)
       CGPathModifier.translate(path: &cgPath, p: reOffset)
    }
 }

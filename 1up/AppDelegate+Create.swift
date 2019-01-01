@@ -9,6 +9,7 @@ extension AppDelegate{
     * TabBarController
     */
    func createTBC() -> UITabBarController{
+      Swift.print("createTBC")
       self.window = UIWindow(frame: UIScreen.main.bounds)
       /*Create NavControllers*/
       let nav1:UINavigationController = {

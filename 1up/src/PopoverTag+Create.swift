@@ -18,9 +18,7 @@ extension PopoverTag{
 //         $0.backgroundColor = .orange/*debug*/
          addSubview($0)
          $0.activateAnchor { view in
-            let a = Constraint.anchor(view, to: self, align: .centerCenter, alignTo: .centerCenter,offset:.init(x:0,y:offsetY))
-//            let s = Constraint.size(view, size: .init(width:100,height:20))
-            return a//(a,s)
+            return Constraint.anchor(view, to: self, align: .centerCenter, alignTo: .centerCenter,offset:.init(x:0,y:offsetY))
          }
          Swift.print("$0.frame.height:  \($0.frame.height)")
       }
