@@ -7,7 +7,7 @@ extension PopoverLabel{
    /**
     * Shadow
     */
-   static func applyShadow(view:UIView,path:CGPath,style:ShadowStyle){
+   internal static func applyShadow(view:UIView,path:CGPath,style:ShadowStyle){
       with(view.layer) {
          $0.shadowPath = path
          $0.shadowColor = style.color.cgColor

@@ -13,7 +13,6 @@
 		F110DF7C21DBA54B00096BC0 /* TBC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF7A21DBA54B00096BC0 /* TBC+Extension.swift */; };
 		F110DF7D21DBA54B00096BC0 /* AppDelegate+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF7B21DBA54B00096BC0 /* AppDelegate+Create.swift */; };
 		F110DFC921DBAAE800096BC0 /* PopoverLabelLib.h in Headers */ = {isa = PBXBuildFile; fileRef = F110DFC721DBAAE800096BC0 /* PopoverLabelLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F110DFCC21DBAAE800096BC0 /* PopoverLabelLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DFC521DBAAE800096BC0 /* PopoverLabelLib.framework */; };
 		F110DFCD21DBAAE800096BC0 /* PopoverLabelLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F110DFC521DBAAE800096BC0 /* PopoverLabelLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F110DFD121DBAB0000096BC0 /* Util+CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF8A21DBA5E300096BC0 /* Util+CGPath.swift */; };
 		F110DFD221DBAB0000096BC0 /* Util+CGShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF8B21DBA5E300096BC0 /* Util+CGShape.swift */; };
@@ -26,9 +25,16 @@
 		F110DFD921DBAB0000096BC0 /* PopoverLabel+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9221DBA5E300096BC0 /* PopoverLabel+Layout.swift */; };
 		F110DFDA21DBAB0000096BC0 /* PopoverLabel+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9321DBA5E300096BC0 /* PopoverLabel+Animation.swift */; };
 		F110DFDB21DBAB0000096BC0 /* PopoverLabel+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9421DBA5E300096BC0 /* PopoverLabel+Create.swift */; };
-		F17E0E1C21DBC0D800EE3027 /* Spatial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17E0E1921DBC0D700EE3027 /* Spatial.framework */; };
-		F17E0E1D21DBC0D800EE3027 /* With.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17E0E1A21DBC0D700EE3027 /* With.framework */; };
-		F17E0E1E21DBC0D800EE3027 /* SimpleTimerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17E0E1B21DBC0D800EE3027 /* SimpleTimerLib.framework */; };
+		F17E0E1F21DCE94400EE3027 /* PopoverLabelLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F110DFC521DBAAE800096BC0 /* PopoverLabelLib.framework */; };
+		F17E0E2021DCE94900EE3027 /* SimpleTimerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17E0E1B21DBC0D800EE3027 /* SimpleTimerLib.framework */; };
+		F17E0E2121DCE94900EE3027 /* SimpleTimerLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F17E0E1B21DBC0D800EE3027 /* SimpleTimerLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F17E0E2221DCE94900EE3027 /* Spatial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17E0E1921DBC0D700EE3027 /* Spatial.framework */; };
+		F17E0E2321DCE94900EE3027 /* Spatial.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F17E0E1921DBC0D700EE3027 /* Spatial.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F17E0E2421DCE94900EE3027 /* With.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17E0E1A21DBC0D700EE3027 /* With.framework */; };
+		F17E0E2521DCE94900EE3027 /* With.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F17E0E1A21DBC0D700EE3027 /* With.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F17E0E2621DCE94E00EE3027 /* SimpleTimerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17E0E1B21DBC0D800EE3027 /* SimpleTimerLib.framework */; };
+		F17E0E2721DCE94E00EE3027 /* Spatial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17E0E1921DBC0D700EE3027 /* Spatial.framework */; };
+		F17E0E2821DCE94E00EE3027 /* With.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17E0E1A21DBC0D700EE3027 /* With.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +54,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F17E0E2121DCE94900EE3027 /* SimpleTimerLib.framework in Embed Frameworks */,
 				F110DFCD21DBAAE800096BC0 /* PopoverLabelLib.framework in Embed Frameworks */,
+				F17E0E2521DCE94900EE3027 /* With.framework in Embed Frameworks */,
+				F17E0E2321DCE94900EE3027 /* Spatial.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,7 +96,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F110DFCC21DBAAE800096BC0 /* PopoverLabelLib.framework in Frameworks */,
+				F17E0E2021DCE94900EE3027 /* SimpleTimerLib.framework in Frameworks */,
+				F17E0E1F21DCE94400EE3027 /* PopoverLabelLib.framework in Frameworks */,
+				F17E0E2421DCE94900EE3027 /* With.framework in Frameworks */,
+				F17E0E2221DCE94900EE3027 /* Spatial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,9 +107,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F17E0E1C21DBC0D800EE3027 /* Spatial.framework in Frameworks */,
-				F17E0E1D21DBC0D800EE3027 /* With.framework in Frameworks */,
-				F17E0E1E21DBC0D800EE3027 /* SimpleTimerLib.framework in Frameworks */,
+				F17E0E2621DCE94E00EE3027 /* SimpleTimerLib.framework in Frameworks */,
+				F17E0E2721DCE94E00EE3027 /* Spatial.framework in Frameworks */,
+				F17E0E2821DCE94E00EE3027 /* With.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

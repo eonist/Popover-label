@@ -44,7 +44,7 @@ extension PopoverLabel{
    /**
     * Scale from this pivot point in the scaling animation
     */
-   var pivot:CGPoint {
+   fileprivate var pivot:CGPoint {
       return self.alignment == .top ? topCenterPivot : bottomCenterPivot
    }
    private var topCenterPivot:CGPoint {
@@ -56,7 +56,7 @@ extension PopoverLabel{
    /**
     * Used for aligning the textLabel
     */
-   var offsetY:CGFloat {
+   internal var offsetY:CGFloat {
       return self.alignment == .top ? style.arrow.height : 0
    }
 }

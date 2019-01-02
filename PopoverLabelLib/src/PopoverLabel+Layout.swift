@@ -19,14 +19,13 @@ extension PopoverLabel{
    /**
     * Resize to fitting height based on the "future" heights of each UI element
     */
-   private func activatePopViewConstraints(){
+   fileprivate func activatePopViewConstraints(){
       let dynamicSize = self.textLabel.frame.size
       if dynamicSize.width > 0 && dynamicSize.height > 0{ /*the height of the sub views must be more than zero*/
-         self.activateConstraint { view in /*Make constraint for PopView*/
+         self.activateSize { view in /*Make constraint for PopView*/
             let width = dynamicSize.width + style.margin.left + style.margin.right
-            let w = Constraint.width(self, width: width)
-            let h = Constraint.height(view, height: dynamicSize.height + style.margin.top + style.margin.bottom + style.arrow.height)
-            return [w,h]
+            let height = dynamicSize.height + style.margin.top + style.margin.bottom + style.arrow.height
+            return Constraint.size(view, size: .init(width: width, height: height))//(w,h)
          }
       }
    }

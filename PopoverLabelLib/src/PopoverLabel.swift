@@ -4,12 +4,12 @@ import Spatial
 
 open class PopoverLabel:UIView{
    /*Variables*/
-   let style:Style
-   let text:String
-   let alignment:AlignmentType
+   internal let style:Style
+   internal let text:String
+   internal let alignment:AlignmentType
    /*UI*/
-   lazy var backgroundLayer:CAShapeLayer = createBackgroundLayer()
-   lazy var textLabel:UILabel = createTextLabel()
+   internal lazy var backgroundLayer:CAShapeLayer = createBackgroundLayer()
+   internal lazy var textLabel:UILabel = createTextLabel()
    /*Init*/
    public init(text:String, style:Style = PopoverLabel.defaultStyle, alignment:AlignmentType) {
       self.style = style

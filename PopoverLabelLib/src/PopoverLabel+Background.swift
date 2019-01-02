@@ -7,17 +7,9 @@ extension PopoverLabel{
    /**
     * Creates the Arrow box graphics
     */
-   static func createArrowBox(rect:CGRect, style:Style, alignment:AlignmentType) -> CAShapeLayer{
-      let rect:CGRect = CGRect.init(origin:.init(x:rect.origin.x,y:rect.origin.y+style.arrow.height),size:rect.size)
-      let adjacentSide = TriangleMath.adjacent(opposite: style.arrow.height)
-      let p1 = CGPoint.init(x:rect.origin.x,y:rect.origin.y)
+   internal static func createArrowBox(rect:CGRect, style:Style, alignment:AlignmentType) -> CAShapeLayer{
+      let (p1,a,b,c,p2,p3,p4):ArrowBox = arrowBox(rect: rect, style: style)
       /*Triangle*/
-      let a = CGPoint.init(x: p1.x+(rect.width/2)-adjacentSide, y: rect.origin.y )
-      let b = CGPoint.init(x: p1.x+(rect.width/2), y: rect.origin.y-style.arrow.height)
-      let c = CGPoint.init(x: p1.x+(rect.width/2)+adjacentSide, y: rect.origin.y)
-      let p2 = CGPoint.init(x:rect.origin.x+rect.width, y:rect.origin.y)
-      let p3 = CGPoint.init(x:rect.origin.x+rect.width, y:rect.origin.y+rect.height)
-      let p4 = CGPoint.init(x:rect.origin.x, y:rect.origin.y+rect.height)
       var cgPath:CGMutablePath = with(.init()) {
          $0.move(to: p4)
          $0.addArc(tangent1End: p1, tangent2End: p2, radius: style.radius)
@@ -36,10 +28,26 @@ extension PopoverLabel{
          $0.closeSubpath()
       }
       if alignment == .bottom {PopoverLabel.flipPath(rect:rect, cgPath:&cgPath ,height:style.arrow.height)}
-      let shapeLayer:CAShapeLayer = .init()
-      CGShapeUtil.fill(shape: shapeLayer, cgPath: cgPath, fillColor: style.color)
-      return shapeLayer
+      return with(.init()) {
+         CGShapeUtil.fill(shape: $0, cgPath: cgPath, fillColor: style.color)
+      }
    }
+   /**
+    * Returns the points that represents the arrowBox
+    */
+   private static func arrowBox(rect:CGRect, style:Style) -> ArrowBox{
+      let rect:CGRect = CGRect.init(origin:.init(x:rect.origin.x,y:rect.origin.y+style.arrow.height),size:rect.size)
+      let adjacentSide = TriangleMath.adjacent(opposite: style.arrow.height)
+      let p1 = CGPoint.init(x:rect.origin.x,y:rect.origin.y)
+      let a = CGPoint.init(x: p1.x+(rect.width/2)-adjacentSide, y: rect.origin.y )
+      let b = CGPoint.init(x: p1.x+(rect.width/2), y: rect.origin.y-style.arrow.height)
+      let c = CGPoint.init(x: p1.x+(rect.width/2)+adjacentSide, y: rect.origin.y)
+      let p2 = CGPoint.init(x:rect.origin.x+rect.width, y:rect.origin.y)
+      let p3 = CGPoint.init(x:rect.origin.x+rect.width, y:rect.origin.y+rect.height)
+      let p4 = CGPoint.init(x:rect.origin.x, y:rect.origin.y+rect.height)
+      return (p1,a,b,c,p2,p3,p4)
+   }
+   typealias ArrowBox = (p1:CGPoint,a:CGPoint,b:CGPoint,c:CGPoint,p2:CGPoint,p3:CGPoint,p4:CGPoint)
 }
 /**
  * Utility
