@@ -5,7 +5,10 @@ import With
  */
 extension PopoverLabel{
    /**
-    * Creates the Arrow box graphics
+    * Creates the Arrow box graphics (called from the `createBackgroundLayer` method)
+    * - parameter rect: This reperesents the size of the arrowBox
+    * - parameter style: This represents the style you want to apply, arrowHeight and roudness is taken into account
+    * - parameter alignment: If you want the arrow to be on top or bottom
     */
    internal static func createArrowBox(rect:CGRect, style:Style, alignment:AlignmentType) -> CAShapeLayer{
       let (p1,a,b,c,p2,p3,p4):ArrowBox = arrowBox(rect: rect, style: style)
@@ -27,7 +30,7 @@ extension PopoverLabel{
          $0.addArc(tangent1End: p4, tangent2End: p1, radius: style.radius)
          $0.closeSubpath()
       }
-      if alignment == .bottom {PopoverLabel.flipPath(rect:rect, cgPath:&cgPath ,height:style.arrow.height)}
+      if alignment == .bottom { PopoverLabel.flipPath(rect:rect, cgPath:&cgPath ,height:style.arrow.height) }
       return with(.init()) {
          CGShapeUtil.fill(shape: $0, cgPath: cgPath, fillColor: style.color)
       }
