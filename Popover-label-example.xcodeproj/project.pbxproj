@@ -124,7 +124,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F109EE9E21E6225F00FCC696 /* common */ = {
+		F109EE9E21E6225F00FCC696 /* arrowBox */ = {
 			isa = PBXGroup;
 			children = (
 				F110DF8921DBA5E300096BC0 /* util */,
@@ -134,7 +134,7 @@
 				F109EEA521E71C2F00FCC696 /* ArrowBox+Style.swift */,
 				F109EEA721E71D3500FCC696 /* ArrowBox+Type.swift */,
 			);
-			path = common;
+			path = arrowBox;
 			sourceTree = "<group>";
 		};
 		F110DF5C21DBA41400096BC0 = {
@@ -172,7 +172,7 @@
 		F110DF8821DBA5E300096BC0 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				F109EE9E21E6225F00FCC696 /* common */,
+				F109EE9E21E6225F00FCC696 /* arrowBox */,
 				F110DF9121DBA5E300096BC0 /* PopoverLabel.swift */,
 				F110DF8F21DBA5E300096BC0 /* PopoverLabel+Shadow.swift */,
 				F110DF9021DBA5E300096BC0 /* PopoverLabel+Style.swift */,

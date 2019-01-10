@@ -8,7 +8,7 @@ open class PopoverLabel:UIView{
    internal let text:String
    internal let alignment:ArrowBox.AlignmentType
    /*UI*/
-   internal lazy var backgroundLayer:CAShapeLayer = createBackgroundLayer()
+   internal lazy var backgroundLayer:CAShapeLayer = createArrowBox()
    internal lazy var textLabel:UILabel = createTextLabel()
    /**
     * - parameter text: text inside the popoverlabel
