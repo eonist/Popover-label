@@ -5,13 +5,14 @@ import Spatial
 extension PopoverLabel{
    /**
     * layoutSubviews (Called from AutoLayout)
+    * - Note: We check if bound.width is more than zero because this method is called twice, once when bounds are not defined yet
     */
    override open func layoutSubviews() {
       super.layoutSubviews()
       if self.bounds.width > 0 {
-         _ = backgroundLayer
-         if let path = backgroundLayer.path {//TODO: ⚠️️ store layer and path in a tuple
-            PopoverLabel.applyShadow(view:self, path:path, style:style.shadow)
+         _ = arrowBox
+         if let path = arrowBox.path {//TODO: ⚠️️ store layer and path in a tuple
+            ShadowUtil.applyShadow(view:self, path:path, style:style.shadow)
          }
       }
       activatePopViewConstraints()
