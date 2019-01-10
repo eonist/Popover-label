@@ -24,7 +24,7 @@ extension PopoverLabel{
       if dynamicSize.width > 0 && dynamicSize.height > 0{ /*the height of the sub views must be more than zero*/
          self.activateSize { view in /*Make constraint for PopView*/
             let width = dynamicSize.width + style.margin.left + style.margin.right
-            let height = dynamicSize.height + style.margin.top + style.margin.bottom + style.arrow.height
+            let height = dynamicSize.height + style.margin.top + style.margin.bottom + style.arrowBoxStyle.arrowStyle.height
             return Constraint.size(view, size: .init(width: width, height: height))//(w,h)
          }
       }

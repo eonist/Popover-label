@@ -1,7 +1,6 @@
 import UIKit
 import With
 import Spatial
-
 /**
  * Create
  */
@@ -17,7 +16,7 @@ extension PopoverLabel{
          $0.textAlignment = .center
          addSubview($0)
          $0.activateAnchor { view in
-            return Constraint.anchor(view, to: self, align: .centerCenter, alignTo: .centerCenter,offset:.init(x:0,y:offsetY))
+            return Constraint.anchor(view, to: self, align: .centerCenter, alignTo: .centerCenter, offset:.init(x:0,y:offsetY))
          }
       }
    }
@@ -25,7 +24,7 @@ extension PopoverLabel{
     * Creates the background layer
     */
    internal func createBackgroundLayer() -> CAShapeLayer{
-      let shapeLayer = PopoverLabel.createArrowBox(rect: self.bounds,  style:style, alignment: self.alignment)
+      let shapeLayer = ArrowBoxUtil.createArrowBox(rect: self.bounds, style:style.arrowBoxStyle, alignment: self.alignment)
       self.layer.insertSublayer(shapeLayer, at: 0)/*⚠️️ If you just add the sublayer it will be above even subviews*/
       return shapeLayer
    }

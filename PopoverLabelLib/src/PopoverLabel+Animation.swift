@@ -48,15 +48,15 @@ extension PopoverLabel{
       return self.alignment == .top ? topCenterPivot : bottomCenterPivot
    }
    private var topCenterPivot:CGPoint {
-      return .init(x:0,y:-(self.bounds.height+self.style.arrow.height)/2)
+      return .init(x:0,y:-(self.bounds.height+self.style.arrowBoxStyle.arrowStyle.height)/2)
    }
    private var bottomCenterPivot:CGPoint {
-      return .init(x:0,y:(self.bounds.height+self.style.arrow.height)/2)
+      return .init(x:0,y:(self.bounds.height+self.style.arrowBoxStyle.arrowStyle.height)/2)
    }
    /**
     * Used for aligning the textLabel
     */
    internal var offsetY:CGFloat {
-      return self.alignment == .top ? style.arrow.height : 0
+      return self.alignment == .top ? style.arrowBoxStyle.arrowStyle.height : 0
    }
 }

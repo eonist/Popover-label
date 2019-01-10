@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F109EEA021E6227300FCC696 /* ArrowBoxUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109EE9F21E6227300FCC696 /* ArrowBoxUtil.swift */; };
 		F110DF6921DBA41500096BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF6821DBA41500096BC0 /* AppDelegate.swift */; };
 		F110DF7021DBA41800096BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F110DF6F21DBA41800096BC0 /* Assets.xcassets */; };
 		F110DF7321DBA41800096BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F110DF7121DBA41800096BC0 /* LaunchScreen.storyboard */; };
@@ -65,6 +66,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F109EE9F21E6227300FCC696 /* ArrowBoxUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowBoxUtil.swift; sourceTree = "<group>"; };
 		F110DF6521DBA41500096BC0 /* Popover-label-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Popover-label-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F110DF6821DBA41500096BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F110DF6F21DBA41800096BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -116,6 +118,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F109EE9E21E6225F00FCC696 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F109EE9F21E6227300FCC696 /* ArrowBoxUtil.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
 		F110DF5C21DBA41400096BC0 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +161,7 @@
 		F110DF8821DBA5E300096BC0 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				F109EE9E21E6225F00FCC696 /* common */,
 				F110DF8921DBA5E300096BC0 /* util */,
 				F110DF9121DBA5E300096BC0 /* PopoverLabel.swift */,
 				F110DF8E21DBA5E300096BC0 /* PopoverLabel+Background.swift */,
@@ -323,6 +334,7 @@
 				F110DFDA21DBAB0000096BC0 /* PopoverLabel+Animation.swift in Sources */,
 				F110DFD621DBAB0000096BC0 /* PopoverLabel+Background.swift in Sources */,
 				F110DFD521DBAB0000096BC0 /* PopoverLabel.swift in Sources */,
+				F109EEA021E6227300FCC696 /* ArrowBoxUtil.swift in Sources */,
 				F110DFD821DBAB0000096BC0 /* PopoverLabel+Style.swift in Sources */,
 				F110DFD721DBAB0000096BC0 /* PopoverLabel+Shadow.swift in Sources */,
 				F110DFD121DBAB0000096BC0 /* Util+CGPath.swift in Sources */,
