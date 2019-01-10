@@ -6,12 +6,16 @@ open class PopoverLabel:UIView{
    /*Variables*/
    internal let style:Style
    internal let text:String
-   internal let alignment:AlignmentType
+   internal let alignment:ArrowBox.AlignmentType
    /*UI*/
    internal lazy var backgroundLayer:CAShapeLayer = createBackgroundLayer()
    internal lazy var textLabel:UILabel = createTextLabel()
-   /*Init*/
-   public init(text:String, style:Style = PopoverLabel.defaultStyle, alignment:AlignmentType) {
+   /**
+    * - parameter text: text inside the popoverlabel
+    * - parameter Style: represents text and arrow style
+    * - parameter alignement: determines the top or bottom placment of the arrow
+    */
+   public init(text:String, style:Style = PopoverLabel.defaultStyle, alignment:ArrowBox.AlignmentType) {
       self.style = style
       self.text = text
       self.alignment = alignment

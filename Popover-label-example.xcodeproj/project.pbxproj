@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F109EEA021E6227300FCC696 /* ArrowBoxUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109EE9F21E6227300FCC696 /* ArrowBoxUtil.swift */; };
+		F109EEA021E6227300FCC696 /* ArrowBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109EE9F21E6227300FCC696 /* ArrowBox.swift */; };
+		F109EEA221E71B5200FCC696 /* ArrowBox+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109EEA121E71B5200FCC696 /* ArrowBox+Create.swift */; };
+		F109EEA421E71BD800FCC696 /* ArrowBox+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109EEA321E71BD800FCC696 /* ArrowBox+Util.swift */; };
+		F109EEA621E71C2F00FCC696 /* ArrowBox+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109EEA521E71C2F00FCC696 /* ArrowBox+Style.swift */; };
+		F109EEA821E71D3500FCC696 /* ArrowBox+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109EEA721E71D3500FCC696 /* ArrowBox+Type.swift */; };
 		F110DF6921DBA41500096BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF6821DBA41500096BC0 /* AppDelegate.swift */; };
 		F110DF7021DBA41800096BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F110DF6F21DBA41800096BC0 /* Assets.xcassets */; };
 		F110DF7321DBA41800096BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F110DF7121DBA41800096BC0 /* LaunchScreen.storyboard */; };
@@ -20,7 +24,6 @@
 		F110DFD321DBAB0000096BC0 /* Util+CGAffineTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF8C21DBA5E300096BC0 /* Util+CGAffineTransform.swift */; };
 		F110DFD421DBAB0000096BC0 /* Util+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF8D21DBA5E300096BC0 /* Util+Math.swift */; };
 		F110DFD521DBAB0000096BC0 /* PopoverLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9121DBA5E300096BC0 /* PopoverLabel.swift */; };
-		F110DFD621DBAB0000096BC0 /* PopoverLabel+Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF8E21DBA5E300096BC0 /* PopoverLabel+Background.swift */; };
 		F110DFD721DBAB0000096BC0 /* PopoverLabel+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF8F21DBA5E300096BC0 /* PopoverLabel+Shadow.swift */; };
 		F110DFD821DBAB0000096BC0 /* PopoverLabel+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9021DBA5E300096BC0 /* PopoverLabel+Style.swift */; };
 		F110DFD921DBAB0000096BC0 /* PopoverLabel+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF9221DBA5E300096BC0 /* PopoverLabel+Layout.swift */; };
@@ -66,7 +69,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F109EE9F21E6227300FCC696 /* ArrowBoxUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowBoxUtil.swift; sourceTree = "<group>"; };
+		F109EE9F21E6227300FCC696 /* ArrowBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowBox.swift; sourceTree = "<group>"; };
+		F109EEA121E71B5200FCC696 /* ArrowBox+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArrowBox+Create.swift"; sourceTree = "<group>"; };
+		F109EEA321E71BD800FCC696 /* ArrowBox+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArrowBox+Util.swift"; sourceTree = "<group>"; };
+		F109EEA521E71C2F00FCC696 /* ArrowBox+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArrowBox+Style.swift"; sourceTree = "<group>"; };
+		F109EEA721E71D3500FCC696 /* ArrowBox+Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArrowBox+Type.swift"; sourceTree = "<group>"; };
 		F110DF6521DBA41500096BC0 /* Popover-label-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Popover-label-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F110DF6821DBA41500096BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F110DF6F21DBA41800096BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,7 +85,6 @@
 		F110DF8B21DBA5E300096BC0 /* Util+CGShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Util+CGShape.swift"; sourceTree = "<group>"; };
 		F110DF8C21DBA5E300096BC0 /* Util+CGAffineTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Util+CGAffineTransform.swift"; sourceTree = "<group>"; };
 		F110DF8D21DBA5E300096BC0 /* Util+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Util+Math.swift"; sourceTree = "<group>"; };
-		F110DF8E21DBA5E300096BC0 /* PopoverLabel+Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopoverLabel+Background.swift"; sourceTree = "<group>"; };
 		F110DF8F21DBA5E300096BC0 /* PopoverLabel+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopoverLabel+Shadow.swift"; sourceTree = "<group>"; };
 		F110DF9021DBA5E300096BC0 /* PopoverLabel+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopoverLabel+Style.swift"; sourceTree = "<group>"; };
 		F110DF9121DBA5E300096BC0 /* PopoverLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverLabel.swift; sourceTree = "<group>"; };
@@ -121,7 +127,12 @@
 		F109EE9E21E6225F00FCC696 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				F109EE9F21E6227300FCC696 /* ArrowBoxUtil.swift */,
+				F110DF8921DBA5E300096BC0 /* util */,
+				F109EE9F21E6227300FCC696 /* ArrowBox.swift */,
+				F109EEA121E71B5200FCC696 /* ArrowBox+Create.swift */,
+				F109EEA321E71BD800FCC696 /* ArrowBox+Util.swift */,
+				F109EEA521E71C2F00FCC696 /* ArrowBox+Style.swift */,
+				F109EEA721E71D3500FCC696 /* ArrowBox+Type.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -162,9 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				F109EE9E21E6225F00FCC696 /* common */,
-				F110DF8921DBA5E300096BC0 /* util */,
 				F110DF9121DBA5E300096BC0 /* PopoverLabel.swift */,
-				F110DF8E21DBA5E300096BC0 /* PopoverLabel+Background.swift */,
 				F110DF8F21DBA5E300096BC0 /* PopoverLabel+Shadow.swift */,
 				F110DF9021DBA5E300096BC0 /* PopoverLabel+Style.swift */,
 				F110DF9221DBA5E300096BC0 /* PopoverLabel+Layout.swift */,
@@ -332,13 +341,16 @@
 				F110DFD321DBAB0000096BC0 /* Util+CGAffineTransform.swift in Sources */,
 				F110DFD421DBAB0000096BC0 /* Util+Math.swift in Sources */,
 				F110DFDA21DBAB0000096BC0 /* PopoverLabel+Animation.swift in Sources */,
-				F110DFD621DBAB0000096BC0 /* PopoverLabel+Background.swift in Sources */,
 				F110DFD521DBAB0000096BC0 /* PopoverLabel.swift in Sources */,
-				F109EEA021E6227300FCC696 /* ArrowBoxUtil.swift in Sources */,
+				F109EEA021E6227300FCC696 /* ArrowBox.swift in Sources */,
+				F109EEA221E71B5200FCC696 /* ArrowBox+Create.swift in Sources */,
 				F110DFD821DBAB0000096BC0 /* PopoverLabel+Style.swift in Sources */,
 				F110DFD721DBAB0000096BC0 /* PopoverLabel+Shadow.swift in Sources */,
 				F110DFD121DBAB0000096BC0 /* Util+CGPath.swift in Sources */,
 				F110DFD221DBAB0000096BC0 /* Util+CGShape.swift in Sources */,
+				F109EEA621E71C2F00FCC696 /* ArrowBox+Style.swift in Sources */,
+				F109EEA421E71BD800FCC696 /* ArrowBox+Util.swift in Sources */,
+				F109EEA821E71D3500FCC696 /* ArrowBox+Type.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

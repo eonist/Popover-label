@@ -47,9 +47,15 @@ extension PopoverLabel{
    fileprivate var pivot:CGPoint {
       return self.alignment == .top ? topCenterPivot : bottomCenterPivot
    }
+   /**
+    * Scale from this pivot if the arrow is on top
+    */
    private var topCenterPivot:CGPoint {
       return .init(x:0,y:-(self.bounds.height+self.style.arrowBoxStyle.arrowStyle.height)/2)
    }
+   /**
+    * Scale from this pivot if the arrow is on bottom
+    */
    private var bottomCenterPivot:CGPoint {
       return .init(x:0,y:(self.bounds.height+self.style.arrowBoxStyle.arrowStyle.height)/2)
    }

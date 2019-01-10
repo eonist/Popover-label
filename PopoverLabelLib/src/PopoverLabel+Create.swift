@@ -24,7 +24,7 @@ extension PopoverLabel{
     * Creates the background layer
     */
    internal func createBackgroundLayer() -> CAShapeLayer{
-      let shapeLayer = ArrowBoxUtil.createArrowBox(rect: self.bounds, style:style.arrowBoxStyle, alignment: self.alignment)
+      let shapeLayer:ArrowBox = .init(rect: self.bounds, style:style.arrowBoxStyle, alignment: self.alignment)
       self.layer.insertSublayer(shapeLayer, at: 0)/*⚠️️ If you just add the sublayer it will be above even subviews*/
       return shapeLayer
    }

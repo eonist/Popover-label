@@ -6,6 +6,9 @@ import With
 extension PopoverLabel{
    /**
     * Shadow
+    * - parameter view: the view to apply the shadow to
+    * - parameter path: The path to draw the shadow around, if a path is not provided the shadow simply becomes a square
+    * - parameter style: color, radius, offset, opacity
     */
    internal static func applyShadow(view:UIView,path:CGPath,style:ShadowStyle){
       with(view.layer) {
