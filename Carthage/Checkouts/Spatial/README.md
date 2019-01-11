@@ -24,22 +24,19 @@ Hassle-free AutoLayout, tailored for interactivity and animation.
 ### Example:
 
 ```swift
-/*Single*/
-btn1.activateAnchorAndSize{ view in
-   let anchor = Constraint.anchor(view, to: self, align: .topLeft, alignTo: .topLeft)
-   let size = Constraint.size(view, size: CGSize.init(width: 96, height: 24))
-   return (anchor,size)
-}
+/*One-liner, single*/
+btn1.anchorAndSize(to: self, width: 96, height: 24)
 ```
 
 ```swift
-/*Bulk*/
+/*Long-hand, bulk*/
 [btn1,btn2,btn3].activateAnchorsAndSizes { views in
    let anchors = Constraint.distribute(vertically: views, align: .topLeft)
-   let sizes = views.map{Constraint.size($0, size: CGSize(width:96,height:42))}
+   let sizes = views.map{$0.size(width:96,height:42)}
    return (anchors, sizes)
 }
 ```
+
 
 ```swift
 /*Animation*/
@@ -47,7 +44,6 @@ btn.animate(to:100,align:left,alignTo:.left)
 ```
 ### Todo:
 - Complete the spaceAround and spaceBetween methods
-- Add one-liner accessors
-- Watch https://www.youtube.com/watch?v=bJI6z-7uNGQ
-- Read https://savvyapps.com/blog/advanced-ios-animations-with-auto-layout
-- Make examples with AutoLayout margins 👈
+- Make examples with AutoLayout margins
+- Add methods for applyAnchor for horizontal and vertical types
+- Document every param in every declaration (Since the API is more stable now)

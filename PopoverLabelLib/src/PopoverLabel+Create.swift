@@ -15,9 +15,8 @@ extension PopoverLabel{
          $0.textColor = style.text.textColor
          $0.textAlignment = .center
          addSubview($0)
-         $0.activateAnchor { view in
-            return Constraint.anchor(view, to: self, align: .centerCenter, alignTo: .centerCenter, offset:.init(x:0,y:Metric.offsetY(self)))
-         }
+         let offset:CGPoint = .init(x:0,y:Metric.offsetY(self))
+         $0.anchor(to: self, align: .centerCenter, alignTo: .centerCenter, offset: offset)
       }
    }
    /**

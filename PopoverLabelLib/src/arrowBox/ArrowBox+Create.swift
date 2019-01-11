@@ -40,13 +40,16 @@ extension ArrowBox{
       let rect:CGRect = CGRect.init(origin:.init(x:rect.origin.x,y:rect.origin.y+arrowStyle.height),size:rect.size)
       let adjacentSide = TriangleMath.adjacent(opposite: arrowStyle.height)
       let p1 = CGPoint.init(x:rect.origin.x,y:rect.origin.y)
-      let a = CGPoint.init(x: p1.x+(rect.width/2)-adjacentSide, y: rect.origin.y )
-      let b = CGPoint.init(x: p1.x+(rect.width/2), y: rect.origin.y-arrowStyle.height)
-      let c = CGPoint.init(x: p1.x+(rect.width/2)+adjacentSide, y: rect.origin.y)
+      let arrow:(a:CGPoint,b:CGPoint,c:CGPoint) = {
+         let a = CGPoint.init(x: p1.x+(rect.width/2)-adjacentSide, y: rect.origin.y )
+         let b = CGPoint.init(x: p1.x+(rect.width/2), y: rect.origin.y-arrowStyle.height)
+         let c = CGPoint.init(x: p1.x+(rect.width/2)+adjacentSide, y: rect.origin.y)
+         return (a,b,c)
+      }()
       let p2 = CGPoint.init(x:rect.origin.x+rect.width, y:rect.origin.y)
       let p3 = CGPoint.init(x:rect.origin.x+rect.width, y:rect.origin.y+rect.height)
       let p4 = CGPoint.init(x:rect.origin.x, y:rect.origin.y+rect.height)
-      return (p1,a,b,c,p2,p3,p4)
+      return (p1,arrow.a,arrow.b,arrow.c,p2,p3,p4)
    }
    
 }

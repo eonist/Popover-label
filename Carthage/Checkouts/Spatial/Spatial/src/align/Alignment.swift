@@ -1,7 +1,7 @@
 import Foundation
 /**
- * TODO: ⚠️️ add none?
- * TODO: ⚠️️ rename to Align? 🤔
+ * TODO: ⚠️️ Add none?
+ * TODO: ⚠️️ Rename to Align? 🤔
  * TODO: ⚠️️ Make own Carthage framework named Align? 🤔
  * NOTE: use Alignment.topLeft.rawValue if you want to get the string "topLeft"
  */
