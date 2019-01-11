@@ -30,29 +30,7 @@ extension AppDelegate{
          $0.tabBar.tintColor = .black
          $0.tabBar.barTintColor = .white
          $0.viewControllers = [nav1, nav2, nav3]
-         $0.createPopoverTag()
+         $0.createPopoverLabel()/*Create the popoverLabel*/
       }
-   }
-}
-/*Dummy ViewControllers*/
-class FirstViewController:UIViewController{
-   override func viewDidLoad() {
-      super.viewDidLoad()
-      self.title = "First"
-      view.backgroundColor = .white
-   }
-}
-class SecondViewController:UIViewController{
-   override func viewDidLoad() {
-      super.viewDidLoad()
-      self.title = "Second"
-      view.backgroundColor = .white
-   }
-}
-class ThirdViewController:UIViewController{
-   override func viewDidLoad() {
-      super.viewDidLoad()
-      self.title = "Third"
-      view.backgroundColor = .white
    }
 }

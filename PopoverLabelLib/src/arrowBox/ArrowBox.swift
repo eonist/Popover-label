@@ -22,4 +22,3 @@ public class ArrowBox:CAShapeLayer{
       fatalError("init(coder:) has not been implemented")
    }
 }
-

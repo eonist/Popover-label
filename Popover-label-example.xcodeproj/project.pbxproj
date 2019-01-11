@@ -14,6 +14,7 @@
 		F109EEA821E71D3500FCC696 /* ArrowBox+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109EEA721E71D3500FCC696 /* ArrowBox+Type.swift */; };
 		F109EEC021E781B800FCC696 /* ShadowUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109EEBF21E781B800FCC696 /* ShadowUtil.swift */; };
 		F109EEC221E784C700FCC696 /* PopoverLabel+Metric.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109EEC121E784C700FCC696 /* PopoverLabel+Metric.swift */; };
+		F109EECC21E8D96E00FCC696 /* AppDelegate+VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109EECB21E8D96E00FCC696 /* AppDelegate+VC.swift */; };
 		F110DF6921DBA41500096BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110DF6821DBA41500096BC0 /* AppDelegate.swift */; };
 		F110DF7021DBA41800096BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F110DF6F21DBA41800096BC0 /* Assets.xcassets */; };
 		F110DF7321DBA41800096BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F110DF7121DBA41800096BC0 /* LaunchScreen.storyboard */; };
@@ -77,6 +78,7 @@
 		F109EEA721E71D3500FCC696 /* ArrowBox+Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArrowBox+Type.swift"; sourceTree = "<group>"; };
 		F109EEBF21E781B800FCC696 /* ShadowUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowUtil.swift; sourceTree = "<group>"; };
 		F109EEC121E784C700FCC696 /* PopoverLabel+Metric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PopoverLabel+Metric.swift"; sourceTree = "<group>"; };
+		F109EECB21E8D96E00FCC696 /* AppDelegate+VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+VC.swift"; sourceTree = "<group>"; };
 		F110DF6521DBA41500096BC0 /* Popover-label-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Popover-label-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F110DF6821DBA41500096BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F110DF6F21DBA41800096BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			children = (
 				F110DF6821DBA41500096BC0 /* AppDelegate.swift */,
 				F110DF7B21DBA54B00096BC0 /* AppDelegate+Create.swift */,
+				F109EECB21E8D96E00FCC696 /* AppDelegate+VC.swift */,
 				F110DF7A21DBA54B00096BC0 /* TBC+Extension.swift */,
 				F110DF6F21DBA41800096BC0 /* Assets.xcassets */,
 				F110DF7121DBA41800096BC0 /* LaunchScreen.storyboard */,
@@ -332,6 +335,7 @@
 				F110DF6921DBA41500096BC0 /* AppDelegate.swift in Sources */,
 				F110DF7D21DBA54B00096BC0 /* AppDelegate+Create.swift in Sources */,
 				F110DF7C21DBA54B00096BC0 /* TBC+Extension.swift in Sources */,
+				F109EECC21E8D96E00FCC696 /* AppDelegate+VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

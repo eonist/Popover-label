@@ -4,7 +4,7 @@ import UIKit
  * Metric calculation
  */
 extension PopoverLabel{
-   class Metric{
+   struct Metric{
       /**
        * Scale from this pivot point in the scaling animation
        */
