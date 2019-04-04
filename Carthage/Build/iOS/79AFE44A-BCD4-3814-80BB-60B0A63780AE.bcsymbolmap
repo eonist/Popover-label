@@ -1,0 +1,57 @@
+BCSymbolMap Version: 2.0
+_$s14SimpleTimerLib0aB0CIetMg_TC
+_$s14SimpleTimerLib0aB0C4tickyycvM.resume.0
+_$s14SimpleTimerLib0aB0C8interval7repeats6onTickACSd_SbyyctcfcfA0_
+_$s14SimpleTimerLib0aB0C6updateyyFTo
+_$s14SimpleTimerLib0aB0C8intervalSdvM.resume.0
+_$s14SimpleTimerLib0aB0C7repeatsSbvM.resume.0
+_$s14SimpleTimerLib0aB0C5timer33_95A86930BFD8793E34C81014055456E0LLSo7NSTimerCSgvpWvd
+_$s14SimpleTimerLibMXM
+_$s14SimpleTimerLib0aB0CML
+_$s14SimpleTimerLib0aB0CMf
+_symbolic _____ 14SimpleTimerLib0aB0C
+_symbolic So7NSTimerCSg
+_symbolic Sd
+_symbolic Sb
+_symbolic yyc
+_$s14SimpleTimerLib0aB0CMF
+__swift_FORCE_LOAD_$_swiftFoundation_$_SimpleTimerLib
+__swift_FORCE_LOAD_$_swiftDarwin_$_SimpleTimerLib
+__swift_FORCE_LOAD_$_swiftObjectiveC_$_SimpleTimerLib
+__swift_FORCE_LOAD_$_swiftCoreFoundation_$_SimpleTimerLib
+__swift_FORCE_LOAD_$_swiftDispatch_$_SimpleTimerLib
+__swift_FORCE_LOAD_$_swiftCoreGraphics_$_SimpleTimerLib
+__swift_FORCE_LOAD_$_swiftUIKit_$_SimpleTimerLib
+__swift_FORCE_LOAD_$_swiftCoreImage_$_SimpleTimerLib
+__swift_FORCE_LOAD_$_swiftMetal_$_SimpleTimerLib
+__swift_FORCE_LOAD_$_swiftQuartzCore_$_SimpleTimerLib
+___swift_reflection_version
+_objc_classes
+_objc_categories
+Apple LLVM version 10.0.1 (clang-1001.0.46.3)
+<swift-imported-modules>
+/Users/eon/Documents/dev/_modules/Popover-label/Carthage/Checkouts/SimpleTimer
+Apple Swift version 5.0 (swiftlang-1001.0.69.5 clang-1001.0.46.3)
+/Users/eon/Documents/dev/_modules/Popover-label/Carthage/Checkouts/SimpleTimer/src/SimpleTimer.swift
+update
+<compiler-generated>
+SimpleTimer.swift
+/Users/eon/Documents/dev/_modules/Popover-label/Carthage/Checkouts/SimpleTimer/src
+reset
+start
+stop
+deinit
+init
+$s14SimpleTimerLib0aB0CMa
+$s14SimpleTimerLib0aB0C8interval7repeats6onTickACSd_SbyyctcfcfA0_
+tick.modify
+tick.set
+tick.get
+repeats.modify
+repeats.set
+repeats.get
+interval.modify
+interval.set
+interval.get
+$s14SimpleTimerLib0aB0C5timer33_95A86930BFD8793E34C81014055456E0LLSo7NSTimerCSgvpfi
+/Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.2_10E125/SimpleTimer/a9ac42da747b5abc8b4cd5f7fdd9e9df854c7c9e/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/IntermediateBuildFilesPath/SimpleTimerExample.build/Release-iphoneos/SimpleTimerLib.build/DerivedSources/SimpleTimerLib_vers.c

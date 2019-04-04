@@ -6,9 +6,9 @@ import With
 public class ShadowUtil{
    /**
     * Shadow
-    * - parameter view: the view to apply the shadow to
-    * - parameter path: The path to draw the shadow around, if a path is not provided the shadow simply becomes a square
-    * - parameter style: color, radius, offset, opacity
+    * - Parameter view: the view to apply the shadow to
+    * - Parameter path: The path to draw the shadow around, if a path is not provided the shadow simply becomes a square
+    * - Parameter style: color, radius, offset, opacity
     */
    internal static func applyShadow(view:UIView,path:CGPath,style:ShadowStyle){
       with(view.layer) {
@@ -22,7 +22,7 @@ public class ShadowUtil{
    }
 }
 /**
- * ShadowUtil
+ * ShadowUtil - types
  */
 extension ShadowUtil{
    public typealias ShadowStyle = (color:UIColor,opacity:Float,offset:CGSize,radius:CGFloat)

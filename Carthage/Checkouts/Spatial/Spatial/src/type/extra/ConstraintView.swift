@@ -1,10 +1,10 @@
-#if os(iOS)
-import UIKit
+
+import Foundation
 /**
- * NOTE: Convenient UIView so you don't have to add anchor and size your self
+ * - Note: Convenient UIView so you don't have to add anchor and size your self
  */
-open class ConstraintView:UIView,ConstraintKind{
+open class ConstraintView:View,ConstraintKind{
    public var anchor:AnchorConstraint?
    public var size:SizeConstraint?
 }
-#endif
+

@@ -1,34 +1,40 @@
-#if os(iOS)
-import UIKit
+import Foundation
 /**
  * AutoLayout Sugar for UIView
  * NOTE: Method overloading doesn't work with closures so each method name needs to be unique 
  */
-extension UIView{
+extension View{
    /**
-    * EXAMPLE:
+    * ## EXAMPLE:
     * button.activateConstraints { view in
     *      let anchor = Constraint.anchor(view, to: self, align: .topLeft, alignTo: .topLeft)
     *      let size = Constraint.size(view, size: CGSize.init(width: UIScreen.main.bounds.width, height: TopBar.topBarHeight))
     *      return [anchor.x,anchor.y,size.w,size.h]
     * }
-    * TODO: ⚠️️ make activateConstraint only for 1 layoutconstraint
     */
-   public func activateConstraints(closure:ConstraintClosure) {
+   public func activateConstraints(closure:ConstraintsClosure) {
       self.translatesAutoresizingMaskIntoConstraints = false
       let constraints:[NSLayoutConstraint] = closure(self)/*the constraints is returned from the closure*/
       NSLayoutConstraint.activate(constraints)
    }
    /**
+    * Activate constraint for singular layoutconstraint
+    */
+   public func activateConstraint(closure:ConstraintClosure) {
+      self.translatesAutoresizingMaskIntoConstraints = false
+      let constraint:NSLayoutConstraint = closure(self)/*the constraints is returned from the closure*/
+      NSLayoutConstraint.activate([constraint])
+   }
+   /**
     * Same as activateConstraint, but returns a tuple in the closure instead of an array
-    * EXAMPLE:
+    * ## EXAMPLE:
     * label.activateAnchorAndSize { view in
     *    let a = Constraint.anchor(view, to: self, align: .topLeft, alignTo:  .topLeft)
     *    let s = Constraint.size(view, to: self)
     *    return (a,s)
     * }
     */
-   public func activateAnchorAndSize(closure:ConstraintsClosure) {
+   public func activateAnchorAndSize(closure:AnchorAndSizeClosure) {
       self.translatesAutoresizingMaskIntoConstraints = false
       let anchorAndSize:AnchorAndSize = closure(self)/*the constraints is returned from the closure*/
       let constraints:[NSLayoutConstraint] = [anchorAndSize.anchor.x,anchorAndSize.anchor.y,anchorAndSize.size.w,anchorAndSize.size.h]
@@ -53,4 +59,3 @@ extension UIView{
       NSLayoutConstraint.activate(constraints)
    }
 }
-#endif

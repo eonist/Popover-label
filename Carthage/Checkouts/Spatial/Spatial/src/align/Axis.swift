@@ -1,8 +1,9 @@
 import Foundation
 /**
- * NOTE: use .rawValue if you want to get the string "topLeft"
+ * Axis alignment
+ * - Note: Use .rawValue if you want to get the string "topLeft"
  */
-public enum Axis:String{/*Axis alignment*/
-   case horizontal
-   case vertical
+public enum Axis:String {
+   case hor/*Horizontal*/
+   case ver/*Vertical*/
 }

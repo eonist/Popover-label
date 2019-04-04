@@ -1,5 +1,4 @@
-#if os(iOS)
-import UIKit
+import Foundation
 /*Single*/
 public typealias AnchorConstraint = (x:NSLayoutConstraint,y:NSLayoutConstraint)
 public typealias SizeConstraint = (w:NSLayoutConstraint,h:NSLayoutConstraint)
@@ -8,23 +7,23 @@ public typealias AnchorConstraintsAndSizeConstraints = (anchorConstraints:[Ancho
 /**
  * Single
  */
-extension UIView{
+extension View{
    /*We keep AnchorsAndSizes in a tuple, because applyConstraints wouldn't work with just an array*/
    public typealias AnchorsAndSizes = (anchors:[NSLayoutConstraint],sizes:[NSLayoutConstraint])//can this go to [UIView].AnchorsAndSizes  ?
-   public typealias ConstraintClosure = (_ view:UIView) -> [NSLayoutConstraint]
+   public typealias ConstraintsClosure = (_ view:View) -> [NSLayoutConstraint]
+   public typealias ConstraintClosure = (_ view:View) -> NSLayoutConstraint
    /*Tuple*/
    public typealias AnchorAndSize = (anchor:AnchorConstraint,size:SizeConstraint)
-   public typealias ConstraintsClosure = (_ view:UIView) -> AnchorAndSize
+   public typealias AnchorAndSizeClosure = (_ view:View) -> AnchorAndSize
    /*Single*/
-   public typealias AnchorClosure = (_ view:UIView) -> AnchorConstraint
-   public typealias SizeClosure = (_ view:UIView) -> SizeConstraint
+   public typealias AnchorClosure = (_ view:View) -> AnchorConstraint
+   public typealias SizeClosure = (_ view:View) -> SizeConstraint
 }
 /**
  * Bulk
  */
-public extension Array where Element:UIView{
-   public typealias ConstraintClosure = (_ views:[UIView]) -> AnchorConstraintsAndSizeConstraints
-   public typealias AnchorConstraintsClosure = (_ views:[UIView]) -> [AnchorConstraint]
-   public typealias SizeConstraintsClosure = (_ views:[UIView]) -> [SizeConstraint]
+extension Array where Element:View{
+   public typealias ConstraintsClosure = (_ views:[View]) -> AnchorConstraintsAndSizeConstraints
+   public typealias AnchorConstraintsClosure = (_ views:[View]) -> [AnchorConstraint]
+   public typealias SizeConstraintsClosure = (_ views:[View]) -> [SizeConstraint]
 }
-#endif

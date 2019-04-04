@@ -1,5 +1,6 @@
 import UIKit
 import Spatial
+
 extension MainView{
    /**
     * Create the FlowView
@@ -19,6 +20,7 @@ extension MainView{
       let view:SpacingTestView = .init()
       self.addSubview(view)
       view.backgroundColor = .green
+//      view.applyAnchorAndSize(to: self)
       view.anchorAndSize(to: self)
       return view
    }

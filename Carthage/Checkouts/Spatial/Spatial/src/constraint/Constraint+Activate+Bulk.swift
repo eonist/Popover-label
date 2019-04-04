@@ -1,21 +1,20 @@
-#if os(iOS)
-import UIKit
+import Foundation
 /**
  * Array
  */
-public extension Array where Element:UIView{
+extension Array where Element:View{
    /**
     * AutoLayout Sugar for UIView's (Multiple)
-    * EXAMPLE:
+    * ## Examples:
     * [label1,label2,label3].activateConstraint { views in
-    *      let anchors = []
-    *      let sizes = []
+    *      let anchors = Constraint.distribute(vertically: views, align: .topLeft)
+    *      let sizes = views.map{Constraint.size(width:96,height:42)}
     *      return (anchors, sizes)
     * }
-    * NOTE: ⚠️️ You have to zip together anchors in some cases
-    * NOTE: ⚠️️ Can we utilize activateAnchors and activateSizes in this method?
+    * - NOTE: ⚠️️ You have to zip together anchors in some cases
+    * - ToDo: ⚠️️ Can we utilize activateAnchors and activateSizes in this method? 🤔
     */
-   public func activateAnchorsAndSizes(closure:ConstraintClosure) {
+   public func activateAnchorsAndSizes(closure:ConstraintsClosure) {
       self.forEach{$0.translatesAutoresizingMaskIntoConstraints = false}
       let constraints:[NSLayoutConstraint] = {
          let constraints:AnchorConstraintsAndSizeConstraints = closure(self)
@@ -27,6 +26,10 @@ public extension Array where Element:UIView{
    }
    /**
     * Activates multiple anchor constraints
+    * ## Examples:
+    * [label1,label2,label3].activateAnchors {
+    *    return Constraint.distribute(vertically: views, align: .topCenter)
+    * }
     */
    public func activateAnchors(closure:AnchorConstraintsClosure) {
       self.forEach{$0.translatesAutoresizingMaskIntoConstraints = false}
@@ -39,6 +42,10 @@ public extension Array where Element:UIView{
    }
    /**
     * Activates multiple size constraints
+    * ## Examples:
+    * [btn1,btn2,btn3].activateSizes { views in
+    *    return views.map{$0.size(width:96,height:42)}
+    * }
     */
    public func activateSizes(closure:SizeConstraintsClosure) {
       self.forEach{$0.translatesAutoresizingMaskIntoConstraints = false}
@@ -50,4 +57,3 @@ public extension Array where Element:UIView{
       NSLayoutConstraint.activate(constraints)
    }
 }
-#endif

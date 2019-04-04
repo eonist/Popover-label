@@ -8,7 +8,7 @@ extension ItemView {
    func createHorizontalItems() -> [UIView] {
       let size:CGSize = CGSize.init(width: 48, height: 48)
       let views:[UIView] = [UIColor.purple,.orange,.red,.blue].map{
-         let view:UIView = .init(frame: .zero)//.init(origin: .zero, size: size)
+         let view:UIView = .init(frame: .zero)
          self.addSubview(view)
          view.backgroundColor = $0
          return view

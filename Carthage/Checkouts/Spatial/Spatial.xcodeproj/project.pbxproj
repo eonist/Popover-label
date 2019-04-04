@@ -22,6 +22,8 @@
 		F109EE9A21E4D5D900FCC696 /* TopBar+Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109EE9921E4D5D900FCC696 /* TopBar+Constant.swift */; };
 		F109EE9D21E5EA9500FCC696 /* CardView+Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109EE9C21E5EA9500FCC696 /* CardView+Constant.swift */; };
 		F114AEDC21ABC18F00942A28 /* AnimationTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114AEDB21ABC18F00942A28 /* AnimationTestView.swift */; };
+		F14FADE121F3980F00ACE5FF /* ConstraintKind+SpaceBetween.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14FADE021F3980F00ACE5FF /* ConstraintKind+SpaceBetween.swift */; };
+		F14FADE321F398C000ACE5FF /* ConstraintKind+SpaceAround.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14FADE221F398C000ACE5FF /* ConstraintKind+SpaceAround.swift */; };
 		F151DDA921738B2C00AA0ABE /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F151DDA821738B2C00AA0ABE /* TopBar.swift */; };
 		F151DDAC21738CAF00AA0ABE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F151DDAB21738CAF00AA0ABE /* Constants.swift */; };
 		F151DDB721739BF500AA0ABE /* Spatial.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1D369D72171FCDC00F498FA /* Spatial.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -38,6 +40,34 @@
 		F17E0E4021DF35DF00EE3027 /* ConstraintKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E0E3F21DF35DF00EE3027 /* ConstraintKind.swift */; };
 		F17E0E4321DF467E00EE3027 /* AnimationTestView+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E0E4221DF467E00EE3027 /* AnimationTestView+Create.swift */; };
 		F17E38732174C15D009C10B2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E38722174C15D009C10B2 /* MainView.swift */; };
+		F185A3A02231974E00AE66B2 /* Hybrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F185A39F2231974E00AE66B2 /* Hybrid.swift */; };
+		F185A3AA22319E8E00AE66B2 /* Spatial_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F185A3A822319E8E00AE66B2 /* Spatial_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F185A3AE22319EAC00AE66B2 /* Hybrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F185A39F2231974E00AE66B2 /* Hybrid.swift */; };
+		F185A3AF22319EAC00AE66B2 /* ConstraintKind+Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109EE6C21E383F000FCC696 /* ConstraintKind+Access.swift */; };
+		F185A3B022319EAC00AE66B2 /* ConstraintKind+Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D369FD2172039B00F498FA /* ConstraintKind+Apply.swift */; };
+		F185A3B122319EAC00AE66B2 /* ConstraintKind+Bulk.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E0E2D21DE327B00EE3027 /* ConstraintKind+Bulk.swift */; };
+		F185A3B222319EAC00AE66B2 /* ConstraintKind+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E0E2B21DE31A800EE3027 /* ConstraintKind+Type.swift */; };
+		F185A3B322319EAC00AE66B2 /* ConstraintKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E0E3F21DF35DF00EE3027 /* ConstraintKind.swift */; };
+		F185A3B422319EAC00AE66B2 /* ConstraintKind+SpaceBetween.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14FADE021F3980F00ACE5FF /* ConstraintKind+SpaceBetween.swift */; };
+		F185A3B522319EAC00AE66B2 /* ConstraintKind+SpaceAround.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14FADE221F398C000ACE5FF /* ConstraintKind+SpaceAround.swift */; };
+		F185A3B622319EAC00AE66B2 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E0E3D21DF356900EE3027 /* ConstraintView.swift */; };
+		F185A3B722319EAC00AE66B2 /* ConstraintKind+Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BD0416219B06F200A4A46F /* ConstraintKind+Animate.swift */; };
+		F185A3B822319EAC00AE66B2 /* ConstraintKind+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E0E3921DF33E100EE3027 /* ConstraintKind+Update.swift */; };
+		F185A3B922319EAC00AE66B2 /* Constraint+Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109EE6A21E382D100FCC696 /* Constraint+Access.swift */; };
+		F185A3BA22319EAC00AE66B2 /* Constraint+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E0E3521DF29E100EE3027 /* Constraint+Anchor.swift */; };
+		F185A3BB22319EAC00AE66B2 /* Constraint+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E0E3721DF2A8D00EE3027 /* Constraint+Size.swift */; };
+		F185A3BC22319EAC00AE66B2 /* Constraint+Activate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D369FF2172039B00F498FA /* Constraint+Activate.swift */; };
+		F185A3BD22319EAC00AE66B2 /* Constraint+Activate+Bulk.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E0E2F21DE364D00EE3027 /* Constraint+Activate+Bulk.swift */; };
+		F185A3BE22319EAC00AE66B2 /* Constraint+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E0E3121DE36F300EE3027 /* Constraint+Type.swift */; };
+		F185A3BF22319EAC00AE66B2 /* Constraint+Distribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10213CB218756310038F496 /* Constraint+Distribution.swift */; };
+		F185A3C022319EAC00AE66B2 /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D369FC2172039B00F498FA /* Alignment.swift */; };
+		F185A3C122319EAC00AE66B2 /* Alignment+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BED70821B7B12400A0D3D4 /* Alignment+Extension.swift */; };
+		F185A3C222319EAC00AE66B2 /* Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BED70621B7AAFE00A0D3D4 /* Axis.swift */; };
+		F185A3C322319EAC00AE66B2 /* HorizontalAlign.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BED70221B7A9AE00A0D3D4 /* HorizontalAlign.swift */; };
+		F185A3C422319EAC00AE66B2 /* VerticalAlign.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BED70421B7A9BB00A0D3D4 /* VerticalAlign.swift */; };
+		F185A3C522319EAC00AE66B2 /* AxisType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BED70021B7A99D00A0D3D4 /* AxisType.swift */; };
+		F185A3C622319EAC00AE66B2 /* AlignType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BED6FE21B7A99000A0D3D4 /* AlignType.swift */; };
+		F185A3C722319EAC00AE66B2 /* AlignType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BED70A21B7B14B00A0D3D4 /* AlignType+Extension.swift */; };
 		F1BD0417219B06F200A4A46F /* ConstraintKind+Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BD0416219B06F200A4A46F /* ConstraintKind+Animate.swift */; };
 		F1BED6FF21B7A99000A0D3D4 /* AlignType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BED6FE21B7A99000A0D3D4 /* AlignType.swift */; };
 		F1BED70121B7A99D00A0D3D4 /* AxisType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BED70021B7A99D00A0D3D4 /* AxisType.swift */; };
@@ -98,6 +128,8 @@
 		F109EE9921E4D5D900FCC696 /* TopBar+Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TopBar+Constant.swift"; sourceTree = "<group>"; };
 		F109EE9C21E5EA9500FCC696 /* CardView+Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardView+Constant.swift"; sourceTree = "<group>"; };
 		F114AEDB21ABC18F00942A28 /* AnimationTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTestView.swift; sourceTree = "<group>"; };
+		F14FADE021F3980F00ACE5FF /* ConstraintKind+SpaceBetween.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConstraintKind+SpaceBetween.swift"; sourceTree = "<group>"; };
+		F14FADE221F398C000ACE5FF /* ConstraintKind+SpaceAround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConstraintKind+SpaceAround.swift"; sourceTree = "<group>"; };
 		F151DDA821738B2C00AA0ABE /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		F151DDAB21738CAF00AA0ABE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F151DDBB2173CABC00AA0ABE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -113,6 +145,10 @@
 		F17E0E3F21DF35DF00EE3027 /* ConstraintKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintKind.swift; sourceTree = "<group>"; };
 		F17E0E4221DF467E00EE3027 /* AnimationTestView+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimationTestView+Create.swift"; sourceTree = "<group>"; };
 		F17E38722174C15D009C10B2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F185A39F2231974E00AE66B2 /* Hybrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hybrid.swift; sourceTree = "<group>"; };
+		F185A3A622319E8E00AE66B2 /* Spatial_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spatial_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F185A3A822319E8E00AE66B2 /* Spatial_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spatial_macOS.h; sourceTree = "<group>"; };
+		F185A3A922319E8E00AE66B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1BD0416219B06F200A4A46F /* ConstraintKind+Animate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConstraintKind+Animate.swift"; sourceTree = "<group>"; };
 		F1BED6FE21B7A99000A0D3D4 /* AlignType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignType.swift; sourceTree = "<group>"; };
 		F1BED70021B7A99D00A0D3D4 /* AxisType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisType.swift; sourceTree = "<group>"; };
@@ -138,6 +174,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F185A3A322319E8E00AE66B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1D369D42171FCDC00F498FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,6 +292,23 @@
 			path = animTest;
 			sourceTree = "<group>";
 		};
+		F185A39E2231969100AE66B2 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F185A39F2231974E00AE66B2 /* Hybrid.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		F185A3A722319E8E00AE66B2 /* Spatial-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				F185A3A822319E8E00AE66B2 /* Spatial_macOS.h */,
+				F185A3A922319E8E00AE66B2 /* Info.plist */,
+			);
+			path = "Spatial-macOS";
+			sourceTree = "<group>";
+		};
 		F1BBDD132180B4FD008DBC9B /* content */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +356,8 @@
 				F17E0E2D21DE327B00EE3027 /* ConstraintKind+Bulk.swift */,
 				F17E0E2B21DE31A800EE3027 /* ConstraintKind+Type.swift */,
 				F17E0E3F21DF35DF00EE3027 /* ConstraintKind.swift */,
+				F14FADE021F3980F00ACE5FF /* ConstraintKind+SpaceBetween.swift */,
+				F14FADE221F398C000ACE5FF /* ConstraintKind+SpaceAround.swift */,
 				F17E0E3C21DF355D00EE3027 /* extra */,
 				F17E0E3B21DF343500EE3027 /* anim */,
 			);
@@ -316,6 +378,7 @@
 			children = (
 				F1D369E72171FDAE00F498FA /* SpatialExample */,
 				F1D369D92171FCDC00F498FA /* Spatial */,
+				F185A3A722319E8E00AE66B2 /* Spatial-macOS */,
 				F1D369D82171FCDC00F498FA /* Products */,
 				F1D369FA2171FECE00F498FA /* Frameworks */,
 			);
@@ -326,6 +389,7 @@
 			children = (
 				F1D369D72171FCDC00F498FA /* Spatial.framework */,
 				F1D369E62171FDAE00F498FA /* SpatialExample.app */,
+				F185A3A622319E8E00AE66B2 /* Spatial_macOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -363,6 +427,7 @@
 		F1D36A04217203AA00F498FA /* src */ = {
 			isa = PBXGroup;
 			children = (
+				F185A39E2231969100AE66B2 /* common */,
 				F1BED70D21B7B2F200A0D3D4 /* type */,
 				F1BED70C21B7B2D600A0D3D4 /* constraint */,
 				F1BED6FD21B7A97300A0D3D4 /* align */,
@@ -384,6 +449,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		F185A3A122319E8E00AE66B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F185A3AA22319E8E00AE66B2 /* Spatial_macOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1D369D22171FCDC00F498FA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -395,6 +468,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		F185A3A522319E8E00AE66B2 /* Spatial-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F185A3AB22319E8E00AE66B2 /* Build configuration list for PBXNativeTarget "Spatial-macOS" */;
+			buildPhases = (
+				F185A3A122319E8E00AE66B2 /* Headers */,
+				F185A3A222319E8E00AE66B2 /* Sources */,
+				F185A3A322319E8E00AE66B2 /* Frameworks */,
+				F185A3A422319E8E00AE66B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Spatial-macOS";
+			productName = "Spatial-macOS";
+			productReference = F185A3A622319E8E00AE66B2 /* Spatial_macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		F1D369D62171FCDC00F498FA /* Spatial */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1D369DF2171FCDC00F498FA /* Build configuration list for PBXNativeTarget "Spatial" */;
@@ -442,6 +533,9 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = FutureLab;
 				TargetAttributes = {
+					F185A3A522319E8E00AE66B2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					F1D369D62171FCDC00F498FA = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
@@ -466,11 +560,19 @@
 			targets = (
 				F1D369D62171FCDC00F498FA /* Spatial */,
 				F1D369E52171FDAE00F498FA /* SpatialExample */,
+				F185A3A522319E8E00AE66B2 /* Spatial-macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F185A3A422319E8E00AE66B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1D369D52171FCDC00F498FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -490,6 +592,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F185A3A222319E8E00AE66B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F185A3C522319EAC00AE66B2 /* AxisType.swift in Sources */,
+				F185A3BF22319EAC00AE66B2 /* Constraint+Distribution.swift in Sources */,
+				F185A3BA22319EAC00AE66B2 /* Constraint+Anchor.swift in Sources */,
+				F185A3BB22319EAC00AE66B2 /* Constraint+Size.swift in Sources */,
+				F185A3B922319EAC00AE66B2 /* Constraint+Access.swift in Sources */,
+				F185A3C622319EAC00AE66B2 /* AlignType.swift in Sources */,
+				F185A3BD22319EAC00AE66B2 /* Constraint+Activate+Bulk.swift in Sources */,
+				F185A3B622319EAC00AE66B2 /* ConstraintView.swift in Sources */,
+				F185A3B422319EAC00AE66B2 /* ConstraintKind+SpaceBetween.swift in Sources */,
+				F185A3C722319EAC00AE66B2 /* AlignType+Extension.swift in Sources */,
+				F185A3C322319EAC00AE66B2 /* HorizontalAlign.swift in Sources */,
+				F185A3B722319EAC00AE66B2 /* ConstraintKind+Animate.swift in Sources */,
+				F185A3BE22319EAC00AE66B2 /* Constraint+Type.swift in Sources */,
+				F185A3B122319EAC00AE66B2 /* ConstraintKind+Bulk.swift in Sources */,
+				F185A3C022319EAC00AE66B2 /* Alignment.swift in Sources */,
+				F185A3BC22319EAC00AE66B2 /* Constraint+Activate.swift in Sources */,
+				F185A3B022319EAC00AE66B2 /* ConstraintKind+Apply.swift in Sources */,
+				F185A3AF22319EAC00AE66B2 /* ConstraintKind+Access.swift in Sources */,
+				F185A3B822319EAC00AE66B2 /* ConstraintKind+Update.swift in Sources */,
+				F185A3C422319EAC00AE66B2 /* VerticalAlign.swift in Sources */,
+				F185A3B522319EAC00AE66B2 /* ConstraintKind+SpaceAround.swift in Sources */,
+				F185A3C222319EAC00AE66B2 /* Axis.swift in Sources */,
+				F185A3B222319EAC00AE66B2 /* ConstraintKind+Type.swift in Sources */,
+				F185A3B322319EAC00AE66B2 /* ConstraintKind.swift in Sources */,
+				F185A3AE22319EAC00AE66B2 /* Hybrid.swift in Sources */,
+				F185A3C122319EAC00AE66B2 /* Alignment+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1D369D32171FCDC00F498FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -501,12 +636,15 @@
 				F1BED70121B7A99D00A0D3D4 /* AxisType.swift in Sources */,
 				F1BD0417219B06F200A4A46F /* ConstraintKind+Animate.swift in Sources */,
 				F1BED70921B7B12400A0D3D4 /* Alignment+Extension.swift in Sources */,
+				F185A3A02231974E00AE66B2 /* Hybrid.swift in Sources */,
 				F17E0E3221DE36F300EE3027 /* Constraint+Type.swift in Sources */,
 				F17E0E2E21DE327B00EE3027 /* ConstraintKind+Bulk.swift in Sources */,
 				F109EE6D21E383F000FCC696 /* ConstraintKind+Access.swift in Sources */,
 				F17E0E2C21DE31A800EE3027 /* ConstraintKind+Type.swift in Sources */,
 				F1D36A032172039B00F498FA /* Constraint+Activate.swift in Sources */,
+				F14FADE121F3980F00ACE5FF /* ConstraintKind+SpaceBetween.swift in Sources */,
 				F17E0E4021DF35DF00EE3027 /* ConstraintKind.swift in Sources */,
+				F14FADE321F398C000ACE5FF /* ConstraintKind+SpaceAround.swift in Sources */,
 				F1BED70521B7A9BB00A0D3D4 /* VerticalAlign.swift in Sources */,
 				F1BED70321B7A9AE00A0D3D4 /* HorizontalAlign.swift in Sources */,
 				F1D36A002172039B00F498FA /* Alignment.swift in Sources */,
@@ -571,6 +709,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F185A3AC22319E8E00AE66B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Spatial-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.futurelab.Spatial-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F185A3AD22319E8E00AE66B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Spatial-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.futurelab.Spatial-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		F1D369DD2171FCDC00F498FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -714,7 +906,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -739,7 +931,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.futurelab.Spatial;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -757,7 +949,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.futurelab.SpatialExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -775,7 +967,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.futurelab.SpatialExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -783,6 +975,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F185A3AB22319E8E00AE66B2 /* Build configuration list for PBXNativeTarget "Spatial-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F185A3AC22319E8E00AE66B2 /* Debug */,
+				F185A3AD22319E8E00AE66B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F1D369D12171FCDC00F498FA /* Build configuration list for PBXProject "Spatial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

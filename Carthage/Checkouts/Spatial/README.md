@@ -1,5 +1,5 @@
 # Spatial
-![mit](https://img.shields.io/badge/License-MIT-brightgreen.svg) ![platform](https://img.shields.io/badge/Platform-iOS-blue.svg) ![Lang](https://img.shields.io/badge/Language-Swift%204.2-orange.svg)
+![mit](https://img.shields.io/badge/License-MIT-brightgreen.svg) ![platform](https://img.shields.io/badge/Platform-iOS-blue.svg) ![platform](https://img.shields.io/badge/Platform-macOS-blue.svg) ![Lang](https://img.shields.io/badge/Language-Swift%205.0-orange.svg)
 [![codebeat badge](https://codebeat.co/badges/b4ee0d27-b00c-464b-b9b2-c9906cb6c19f)](https://codebeat.co/projects/github-com-eonist-spatial-master)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
@@ -26,9 +26,19 @@ Hassle-free AutoLayout, tailored for interactivity and animation.
 ```swift
 /*One-liner, single*/
 btn1.anchorAndSize(to: self, width: 96, height: 24)
+
+/*Long-hand, single*/
+btn1.activateAnchorAndSize{ view in
+	let a = Constraint.anchor(view, to: self)
+	let s = Constraint.size(view, width:96, height:24)
+	return (a,s)
+}
 ```
 
 ```swift
+/*Short-hand, bulk*/
+[btn1,btn2,btn3].distributeAndSize(dir:.vertical, width:96, height:24)
+
 /*Long-hand, bulk*/
 [btn1,btn2,btn3].activateAnchorsAndSizes { views in
    let anchors = Constraint.distribute(vertically: views, align: .topLeft)
@@ -43,7 +53,9 @@ btn1.anchorAndSize(to: self, width: 96, height: 24)
 btn.animate(to:100,align:left,alignTo:.left)
 ```
 ### Todo:
-- Complete the spaceAround and spaceBetween methods
-- Make examples with AutoLayout margins
+- Complete the spaceAround and spaceBetween methods ✅
+- Add macOS support ✅
+- Make examples with AutoLayout margins not
 - Add methods for applyAnchor for horizontal and vertical types
-- Document every param in every declaration (Since the API is more stable now)
+- Document every param in every declaration (Since the API is more stable now) 👈
+- Consider renaming anchor and size to pin and fit

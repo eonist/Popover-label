@@ -1,18 +1,9 @@
 {
-  "Mac" : [
-
-  ],
-  "watchOS" : [
-
-  ],
-  "tvOS" : [
-
-  ],
-  "commitish" : "46f155dc18a4dddf7df62bab6b48fb8e0dd5bd6b",
+  "commitish" : "a9ac42da747b5abc8b4cd5f7fdd9e9df854c7c9e",
   "iOS" : [
     {
       "name" : "SimpleTimerLib",
-      "hash" : "ec5061f71bba0ecda5c191431ef6e5da3f0a7652a43c866bed5cfa5e0d4aff8b"
+      "hash" : "f3f4a5a06a57ff623fa3d0e0e2a740a550681e6036bcd1e0e3f40ab69254ac46"
     }
   ]
 }

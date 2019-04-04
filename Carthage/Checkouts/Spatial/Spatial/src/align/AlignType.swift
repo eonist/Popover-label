@@ -1,9 +1,10 @@
 import Foundation
 /**
- * TODO: ⚠️️ Reference AlignType in HorAlign and VerAlign, and prob use CenterX,CenterY naming instead
- * NOTE: Use .rawValue if you want to get the string "topLeft"
+ * Single align type
+ * - ToDo: ⚠️️ Reference AlignType in HorAlign and VerAlign, and prob use CenterX,CenterY naming instead
+ * - Note: Use .rawValue if you want to get the string "topLeft"
  */
-public enum AlignType:String{/*Single axis*/
+public enum AlignType:String{
    case left
    case right
    case top

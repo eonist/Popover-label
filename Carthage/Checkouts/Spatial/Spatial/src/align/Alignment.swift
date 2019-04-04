@@ -1,11 +1,11 @@
 import Foundation
 /**
- * TODO: ⚠️️ Add none?
- * TODO: ⚠️️ Rename to Align? 🤔
- * TODO: ⚠️️ Make own Carthage framework named Align? 🤔
- * NOTE: use Alignment.topLeft.rawValue if you want to get the string "topLeft"
+ * Alignment types (Both axises)
+ * - TODO: ⚠️️ Add none?
+ * - TODO: ⚠️️ Make own Carthage framework named Align? 🤔
+ * - Note: use Alignment.topLeft.rawValue if you want to get the string "topLeft"
  */
-public enum Alignment:String{/*Both axises*/
+public enum Alignment:String { 
     case topLeft
     case topCenter
     case topRight

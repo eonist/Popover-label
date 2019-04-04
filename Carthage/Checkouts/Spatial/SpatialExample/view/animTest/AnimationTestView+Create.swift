@@ -12,7 +12,7 @@ extension AnimationTest{
       btn.setTitleColor(.black, for: .normal)
       btn.titleLabel?.textAlignment = .center
       btn.titleLabel?.font =  .systemFont(ofSize: 12)
-      //      btn.frame = CGRect(x:100, y:50, width:100, height:50)
+      // btn.frame = CGRect(x:100, y:50, width:100, height:50)
       btn.addTarget(self, action: #selector(buttonTouched), for: .touchUpInside)
       self.addSubview(btn)
       btn.applyAnchorAndSize { view in
@@ -28,7 +28,9 @@ extension AnimationTest{
       button.animate(to: .zero, align: .topLeft, alignTo: .topLeft, onComplete: {})
    }
 }
-
+/**
+ * Button that has ConstraintKind applied
+ */
 class Button:UIButton,ConstraintKind{
    var anchor: AnchorConstraint?
    var size: SizeConstraint?

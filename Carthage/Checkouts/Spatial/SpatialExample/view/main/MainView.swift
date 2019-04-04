@@ -5,7 +5,7 @@ class MainView:UIView {
    lazy var spacingTestView:UIView = createSpacingTestView()
    override func layoutSubviews() {
       super.layoutSubviews()
-      _ = cardView
-      //_ = spacingTestView
+//      _ = cardView
+      _ = spacingTestView
    }
 }

@@ -1,11 +1,9 @@
-#if os(iOS)
-import UIKit
+import Foundation
 /**
- * Positional constraints
- * DESCRIPTION: (Aligning relative to another view (x,y))
- * Discussion: Snapkit and Carthography are too clever and caters to too many facets of autolayout. This library is just a simple extension that does basic autolayout while reducing the setup time in half.
- * TODO: ⚠️️ Not really an anchor, consider renaming to ConstraintAttribute or pin, point, origin, position? or?
- * Discussion: anchor is a more appropriate name than, pin,pos,pt,edge,put,magnet,align,corner (anchor can represent both corner,edge and center)
+ * Positional constraints (Aligning relative to another view (x,y))
+ * - Remark: Snapkit and Carthography are too clever and caters to too many facets of autolayout. This library is just a simple extension that does basic autolayout while reducing the setup time in half.
+ * - ToDo: ⚠️️ Not really an anchor, consider renaming to ConstraintAttribute or pin, point, origin, position? or?
+ * - Note: anchor is a more appropriate name than, pin,pos,pt,edge,put,magnet,align,corner (anchor can represent both corner,edge and center)
  */
 public class Constraint {
    /**
@@ -18,21 +16,21 @@ public class Constraint {
     *    return (a,s)
     * }
     */
-   public static func anchor(_ view:UIView, to:UIView, align:Alignment, alignTo:Alignment, offset:CGPoint = CGPoint(), useMargin:Bool = false) -> AnchorConstraint {/*,offset:CGPoint = CGPoint()*/
-      let horizontal:NSLayoutConstraint = Constraint.anchor(view, to: to, align: align.horAlign, alignTo: alignTo.horAlign,offset:offset.x,useMargin:useMargin)
-      let vertical:NSLayoutConstraint = Constraint.anchor(view, to: to, align: align.verAlign, alignTo: alignTo.verAlign,offset:offset.y,useMargin:useMargin)
-      return (horizontal,vertical)
+   public static func anchor(_ view:View, to:View, align:Alignment, alignTo:Alignment, offset:CGPoint = CGPoint(), useMargin:Bool = false) -> AnchorConstraint {/*,offset:CGPoint = CGPoint()*/
+      let hor:NSLayoutConstraint = Constraint.anchor(view, to: to, align: align.horAlign, alignTo: alignTo.horAlign,offset:offset.x,useMargin:useMargin)
+      let ver:NSLayoutConstraint = Constraint.anchor(view, to: to, align: align.verAlign, alignTo: alignTo.verAlign,offset:offset.y,useMargin:useMargin)
+      return (hor,ver)
    }
    /**
     * Horizontal
     */
-   public static func anchor(_ view:UIView, to:UIView, align:HorizontalAlign, alignTo:HorizontalAlign, offset:CGFloat = 0, useMargin:Bool = false) -> NSLayoutConstraint {/*,offset:CGPoint = CGPoint()*/
+   public static func anchor(_ view:View, to:View, align:HorizontalAlign, alignTo:HorizontalAlign, offset:CGFloat = 0, useMargin:Bool = false) -> NSLayoutConstraint {/*,offset:CGPoint = CGPoint()*/
       return NSLayoutConstraint(item: view, attribute: Util.layoutAttr(align:align), relatedBy: .equal, toItem: to, attribute: Util.layoutAttr(align:alignTo,useMargin:useMargin), multiplier: 1.0, constant: offset)
    }
    /**
     * Vertical
     */
-   public static func anchor(_ view:UIView, to:UIView, align:VerticalAlign, alignTo:VerticalAlign, offset:CGFloat = 0, useMargin:Bool = false) -> NSLayoutConstraint {/*,offset:CGPoint = CGPoint()*/
+   public static func anchor(_ view:View, to:View, align:VerticalAlign, alignTo:VerticalAlign, offset:CGFloat = 0, useMargin:Bool = false) -> NSLayoutConstraint {/*,offset:CGPoint = CGPoint()*/
       let attr = Util.layoutAttr(align:align)
       let relatedByAttr = Util.layoutAttr(align:alignTo,useMargin:useMargin)
       return NSLayoutConstraint(item:view, attribute:attr , relatedBy:.equal, toItem:to, attribute:relatedByAttr, multiplier:1.0, constant:offset)
@@ -40,28 +38,59 @@ public class Constraint {
 }
 /**
  * Internal helper methods
- * TODO: ⚠️️ Move these methods to Util class and see if code-quality improves
+ * - ToDo: ⚠️️ Move these methods to Util class and see if code-quality improves
  */
 fileprivate class Util{
    /**
-    * x (internal)
+    * For aligning in the x axis (internal)
+    * - Note: Layout margin is o ly available for ios and tvos
     */
    static func layoutAttr(align:HorizontalAlign, useMargin:Bool = false) -> NSLayoutConstraint.Attribute{
       switch align{
-      case .left: return useMargin ? NSLayoutConstraint.Attribute.leftMargin : NSLayoutConstraint.Attribute.left //fatalError("err")
-      case .right: return useMargin ? NSLayoutConstraint.Attribute.rightMargin : NSLayoutConstraint.Attribute.right
-      case .centerX: return useMargin ? NSLayoutConstraint.Attribute.centerXWithinMargins : NSLayoutConstraint.Attribute.centerX
+      case .left:
+         #if os(iOS)
+         if useMargin {
+            return  NSLayoutConstraint.Attribute.leftMargin
+         }
+         #endif
+         return NSLayoutConstraint.Attribute.left //fatalError("err")
+      case .right:
+         #if os(iOS)
+         if useMargin {
+            return NSLayoutConstraint.Attribute.rightMargin
+         }
+         #endif
+         return  NSLayoutConstraint.Attribute.right
+      case .centerX:
+         #if os(iOS)
+         if useMargin {
+            return NSLayoutConstraint.Attribute.centerXWithinMargins
+         }
+         #endif
+         return NSLayoutConstraint.Attribute.centerX
       }
    }
    /**
-    * y (internal)
+    * For aligning in the y axis (internal)
+    * - Note: Layout margin is o ly available for ios and tvos
     */
    static func layoutAttr(align:VerticalAlign, useMargin:Bool = false) -> NSLayoutConstraint.Attribute{
       switch align{
-      case .top: return useMargin ? NSLayoutConstraint.Attribute.topMargin : NSLayoutConstraint.Attribute.top
-      case .bottom: return useMargin ? NSLayoutConstraint.Attribute.bottomMargin : NSLayoutConstraint.Attribute.bottom
-      case .centerY: return useMargin ? NSLayoutConstraint.Attribute.centerYWithinMargins : NSLayoutConstraint.Attribute.centerY
+      case .top:
+         #if os(iOS)
+         if useMargin { return NSLayoutConstraint.Attribute.topMargin   }
+         #endif
+         return NSLayoutConstraint.Attribute.top
+      case .bottom:
+          #if os(iOS)
+          if useMargin { return NSLayoutConstraint.Attribute.bottomMargin  }
+          #endif
+         return NSLayoutConstraint.Attribute.bottom
+      case .centerY:
+         #if os(iOS)
+         if useMargin {return NSLayoutConstraint.Attribute.centerYWithinMargins}
+         #endif
+         return NSLayoutConstraint.Attribute.centerY
       }
    }
 }
-#endif

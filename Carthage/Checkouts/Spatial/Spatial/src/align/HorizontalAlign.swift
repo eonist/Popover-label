@@ -1,9 +1,9 @@
 import Foundation
 /**
- * NOTE: Use .rawValue if you want to get the string "topLeft"
+ * - Note: Use .rawValue if you want to get the string "topLeft"
  */
 public enum HorizontalAlign:String{
    case left
    case right
-   case centerX  /*use centerX or else .dot syntax fails*/
+   case centerX/* Use centerX or else .dot syntax fails */
 }
