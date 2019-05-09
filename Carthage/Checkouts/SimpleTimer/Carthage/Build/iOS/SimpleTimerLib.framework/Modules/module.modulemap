@@ -1,0 +1,11 @@
+framework module SimpleTimerLib {
+  umbrella header "SimpleTimerLib.h"
+
+  export *
+  module * { export * }
+}
+
+module SimpleTimerLib.Swift {
+    header "SimpleTimerLib-Swift.h"
+    requires objc
+}

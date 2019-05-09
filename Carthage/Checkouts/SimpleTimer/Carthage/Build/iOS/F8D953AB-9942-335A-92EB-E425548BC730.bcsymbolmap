@@ -1,0 +1,53 @@
+BCSymbolMap Version: 2.0
+_$S14SimpleTimerLib0aB0C8interval7repeats6onTickACSd_SbyyctcfcfA0_
+_$S14SimpleTimerLib0aB0C6updateyyFTo
+_$S14SimpleTimerLib0aB0C5timer33_95A86930BFD8793E34C81014055456E0LLSo7NSTimerCSgvpWvd
+_$S14SimpleTimerLib0aB0C8intervalSdvpWvd
+_$S14SimpleTimerLib0aB0C7repeats33_95A86930BFD8793E34C81014055456E0LLSbvpWvd
+_$S14SimpleTimerLibMXM
+_$S14SimpleTimerLib0aB0CML
+_$S14SimpleTimerLib0aB0CMf
+_symbolic ____ 14SimpleTimerLib0aB0C
+_symbolic So7NSTimerCSg
+_symbolic Sd
+_symbolic Sb
+_symbolic yyc
+_$S14SimpleTimerLib0aB0CMF
+__swift_FORCE_LOAD_$_swiftFoundation_$_SimpleTimerLib
+__swift_FORCE_LOAD_$_swiftDarwin_$_SimpleTimerLib
+__swift_FORCE_LOAD_$_swiftObjectiveC_$_SimpleTimerLib
+__swift_FORCE_LOAD_$_swiftCoreFoundation_$_SimpleTimerLib
+__swift_FORCE_LOAD_$_swiftDispatch_$_SimpleTimerLib
+__swift_FORCE_LOAD_$_swiftCoreGraphics_$_SimpleTimerLib
+__swift_FORCE_LOAD_$_swiftUIKit_$_SimpleTimerLib
+__swift_FORCE_LOAD_$_swiftCoreImage_$_SimpleTimerLib
+__swift_FORCE_LOAD_$_swiftMetal_$_SimpleTimerLib
+__swift_FORCE_LOAD_$_swiftQuartzCore_$_SimpleTimerLib
+___swift_reflection_version
+_symbolic So7NSTimerC
+_symbolic So8NSObjectC
+_$SSo7NSTimerCMF
+_objc_classes
+Apple LLVM version 10.0.0 (clang-1000.11.45.1)
+-emit-bc /Users/eon/Documents/dev/_modules/SimpleTimer/SimpleTimerLib/SimpleTimer.swift -emit-module-path /Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/IntermediateBuildFilesPath/SimpleTimerExample.build/Release-iphoneos/SimpleTimerLib.build/Objects-normal/arm64/SimpleTimerLib.swiftmodule -emit-module-doc-path /Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/IntermediateBuildFilesPath/SimpleTimerExample.build/Release-iphoneos/SimpleTimerLib.build/Objects-normal/arm64/SimpleTimerLib.swiftdoc -serialize-diagnostics-path /Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/IntermediateBuildFilesPath/SimpleTimerExample.build/Release-iphoneos/SimpleTimerLib.build/Objects-normal/arm64/SimpleTimerLib-master.dia -emit-objc-header-path /Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/IntermediateBuildFilesPath/SimpleTimerExample.build/Release-iphoneos/SimpleTimerLib.build/Objects-normal/arm64/SimpleTimerLib-Swift.h -emit-dependencies-path /Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/IntermediateBuildFilesPath/SimpleTimerExample.build/Release-iphoneos/SimpleTimerLib.build/Objects-normal/arm64/SimpleTimerLib-master.d -target arm64-apple-ios12.1 -Xllvm -aarch64-use-tbi -enable-objc-interop -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk -I /Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/BuildProductsPath/Release-iphoneos -F /Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/BuildProductsPath/Release-iphoneos -g -import-underlying-module -module-cache-path /Users/eon/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -swift-version 4.2 -O -serialize-debugging-options -Xcc -I/Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/IntermediateBuildFilesPath/SimpleTimerExample.build/Release-iphoneos/SimpleTimerLib.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/IntermediateBuildFilesPath/SimpleTimerExample.build/Release-iphoneos/SimpleTimerLib.build/SimpleTimerLib-generated-files.hmap -Xcc -I/Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/IntermediateBuildFilesPath/SimpleTimerExample.build/Release-iphoneos/SimpleTimerLib.build/SimpleTimerLib-own-target-headers.hmap -Xcc -I/Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/IntermediateBuildFilesPath/SimpleTimerExample.build/Release-iphoneos/SimpleTimerLib.build/SimpleTimerLib-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/IntermediateBuildFilesPath/SimpleTimerExample.build/Release-iphoneos/SimpleTimerLib.build/all-product-headers.yaml -Xcc -iquote -Xcc /Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/IntermediateBuildFilesPath/SimpleTimerExample.build/Release-iphoneos/SimpleTimerLib.build/SimpleTimerLib-project-headers.hmap -Xcc -I/Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/BuildProductsPath/Release-iphoneos/include -Xcc -I/Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/IntermediateBuildFilesPath/SimpleTimerExample.build/Release-iphoneos/SimpleTimerLib.build/DerivedSources/arm64 -Xcc -I/Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/IntermediateBuildFilesPath/SimpleTimerExample.build/Release-iphoneos/SimpleTimerLib.build/DerivedSources -Xcc -ivfsoverlay -Xcc /Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/IntermediateBuildFilesPath/SimpleTimerExample.build/Release-iphoneos/SimpleTimerLib.build/unextended-module-overlay.yaml -Xcc -working-directory/Users/eon/Documents/dev/_modules/SimpleTimer -parse-as-library -module-name SimpleTimerLib -num-threads 4 -o /Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/IntermediateBuildFilesPath/SimpleTimerExample.build/Release-iphoneos/SimpleTimerLib.build/Objects-normal/arm64/SimpleTimer.bc -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift
+<swift-imported-modules>
+/Users/eon/Documents/dev/_modules/SimpleTimer
+Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)
+/Users/eon/Documents/dev/_modules/SimpleTimer/SimpleTimerLib/SimpleTimer.swift
+deinit
+SimpleTimer.swift
+/Users/eon/Documents/dev/_modules/SimpleTimer/SimpleTimerLib
+update
+<compiler-generated>
+tick.get
+reset
+start
+stop
+init
+$S14SimpleTimerLib0aB0CMa
+$S14SimpleTimerLib0aB0C8interval7repeats6onTickACSd_SbyyctcfcfA0_
+tick.materialize
+tick.set
+$S14SimpleTimerLib0aB0C5timer33_95A86930BFD8793E34C81014055456E0LLSo7NSTimerCSgvpfi
+Apple LLVM version 10.0.0 (clang-1000.11.45.5)
+/Users/eon/Library/Developer/Xcode/DerivedData/SimpleTimerExample-fneblovxurszytamkivnwvbwnwxe/Build/Intermediates.noindex/ArchiveIntermediates/SimpleTimerLib/IntermediateBuildFilesPath/SimpleTimerExample.build/Release-iphoneos/SimpleTimerLib.build/DerivedSources/SimpleTimerLib_vers.c

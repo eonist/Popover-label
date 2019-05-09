@@ -1,0 +1,9 @@
+{
+  "commitish" : "532e66049093491a955281701ce31c20a3f7e4af",
+  "iOS" : [
+    {
+      "name" : "SimpleTimerLib",
+      "hash" : "4b3580e3b50bbb6a1f5ba795f4103d3df0220832c0ffc35175db3def42a3814a"
+    }
+  ]
+}
