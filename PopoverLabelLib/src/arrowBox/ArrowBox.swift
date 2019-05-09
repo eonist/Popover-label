@@ -11,7 +11,7 @@ public class ArrowBox: CAShapeLayer {
    public init(rect: CGRect, style: ArrowBoxStyle, alignment: AlignmentType) {
       super.init()
       var cgPath = ArrowBox.createPath(rect: rect, style: style)
-      if alignment == .bottom { ArrowBox.flipPath(rect: rect, cgPath: &cgPath ,arrowHeight: style.arrowStyle.height) }
+      if alignment == .bottom { ArrowBox.flipPath(rect: rect, cgPath: &cgPath, arrowHeight: style.arrowStyle.height) }
       CGShapeUtil.fill(shape: self, cgPath: cgPath, fillColor: style.color)
    }
    /**

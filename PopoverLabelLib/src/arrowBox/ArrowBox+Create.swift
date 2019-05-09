@@ -10,7 +10,7 @@ extension ArrowBox {
     * - parameter rect: the origin and size of the resulting path
     * - parameter style: Uses the isRound and arrowHeight values
     */
-   internal static func createPath(rect: CGRect, style: ArrowBoxStyle) -> CGMutablePath{
+   internal static func createPath(rect: CGRect, style: ArrowBoxStyle) -> CGMutablePath {
       let (p1, a, b, c, p2, p3, p4): ArrowBoxPoints = ArrowBox.createPoints(rect: rect, arrowStyle: style.arrowStyle)
       /*Triangle*/
       return with(.init()) {
@@ -37,7 +37,7 @@ extension ArrowBox {
     * - parameter arrowStyle: height and isRound
     */
    internal static func createPoints(rect: CGRect, arrowStyle: ArrowStyle) -> ArrowBoxPoints {
-      let rect: CGRect = .init(origin:.init(x:rect.origin.x,y:rect.origin.y+arrowStyle.height),size:rect.size)
+      let rect: CGRect = .init(origin: .init(x: rect.origin.x, y: rect.origin.y + arrowStyle.height), size:rect.size)
       let adjacentSide = TriangleMath.adjacent(opposite: arrowStyle.height)
       let p1: CGPoint = .init(x: rect.origin.x, y: rect.origin.y)
       let arrow:(a: CGPoint, b: CGPoint, c: CGPoint) = {
@@ -46,9 +46,9 @@ extension ArrowBox {
          let c: CGPoint = .init(x: p1.x + (rect.width / 2) + adjacentSide, y: rect.origin.y)
          return (a, b, c)
       }()
-      let p2 = CGPoint.init(x: rect.origin.x + rect.width, y: rect.origin.y)
-      let p3 = CGPoint.init(x: rect.origin.x + rect.width, y: rect.origin.y + rect.height)
-      let p4 = CGPoint.init(x: rect.origin.x, y: rect.origin.y + rect.height)
+      let p2: CGPoint = .init(x: rect.origin.x + rect.width, y: rect.origin.y)
+      let p3: CGPoint = .init(x: rect.origin.x + rect.width, y: rect.origin.y + rect.height)
+      let p4: CGPoint = .init(x: rect.origin.x, y: rect.origin.y + rect.height)
       return (p1, arrow.a, arrow.b, arrow.c, p2, p3, p4)
    }
 }

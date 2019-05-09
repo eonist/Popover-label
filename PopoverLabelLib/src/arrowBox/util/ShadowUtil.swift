@@ -26,5 +26,5 @@ public class ShadowUtil {
  */
 extension ShadowUtil {
    public typealias ShadowStyle = (color: UIColor, opacity: Float, offset: CGSize, radius: CGFloat)
-   public static let defaultShadowStyle:ShadowUtil.ShadowStyle = (color: .gray, opacity: 0.6, offset: .init(width: 0, height: 0), radius: 4)
+   public static let defaultShadowStyle: ShadowUtil.ShadowStyle = (color: .gray, opacity: 0.6, offset: .init(width: 0, height: 0), radius: 4)
 }

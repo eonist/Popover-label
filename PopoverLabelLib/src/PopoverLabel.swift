@@ -2,7 +2,7 @@ import UIKit
 import With
 import Spatial
 
-open class PopoverLabel: UIView{
+open class PopoverLabel: UIView {
    /*Variables*/
    internal let style: Style
    internal let text: String
