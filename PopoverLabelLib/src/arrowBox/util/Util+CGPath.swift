@@ -12,7 +12,7 @@ class CGPathModifier {
     * - parameter p: the point the path should be transled to
     */
    @discardableResult
-   static func translate( path:inout CGMutablePath, p:CGPoint) -> CGMutablePath{
+   static func translate( path:inout CGMutablePath, p: CGPoint) -> CGMutablePath {
       var transformation:CGAffineTransform = CGAffineTransform(translationX: p.x, y: p.y)//swift 3 was -> CGAffineTransformMakeTranslation(x,
       path = path.mutableCopy(using: &transformation)!//swift 3 , was-> CGPathCreateMutableCopyByTransformingPath
       return path
@@ -26,7 +26,7 @@ class CGPathModifier {
     * - parameter angle: the angle the path should be rotated by
     */
    @discardableResult
-   static func rotate(path:inout CGMutablePath, angle:CGFloat) -> CGPath{
+   static func rotate(path:inout CGMutablePath, angle:CGFloat) -> CGPath {
       var transformation:CGAffineTransform  = CGAffineTransform(rotationAngle: angle)//swift 3-> was: CGAffineTransformMakeRotation
       path = path.mutableCopy(using: &transformation)!
       return path

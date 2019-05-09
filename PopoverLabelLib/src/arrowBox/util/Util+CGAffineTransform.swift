@@ -10,7 +10,7 @@ class CGAffineTransformParser {
     * - parameter scale: CGPoint values from 0-1
     * - parameter pivot: The CGPoint to scale from
     */
-   static func scaleFromPoint(transform:CGAffineTransform, scale:CGPoint, pivot:CGPoint) -> CGAffineTransform {
+   static func scaleFromPoint(transform: CGAffineTransform, scale: CGPoint, pivot: CGPoint) -> CGAffineTransform {
       var transform = transform
       transform = transform.translatedBy(x: pivot.x, y: pivot.y)/*<-- this looks strange, but you sort of set the point here*/
       transform = transform.scaledBy(x: scale.x, y: scale.y)// = CGAffineTransformRotate(transform, rotation);
@@ -24,7 +24,7 @@ extension CGAffineTransform {
     * - parameter scale: CGPoint values from 0-1
     * - parameter pivot: The CGPoint to scale from
     */
-   mutating func scaleFromPoint(scale:CGPoint, pivot:CGPoint) {/*Convenience*/
-      self = CGAffineTransformParser.scaleFromPoint(transform:self, scale:scale,pivot:pivot)
+   mutating func scaleFromPoint(scale: CGPoint, pivot: CGPoint) {/*Convenience*/
+      self = CGAffineTransformParser.scaleFromPoint(transform: self, scale: scale, pivot: pivot)
    }
 }
