@@ -1,5 +1,5 @@
 ![mit](https://img.shields.io/badge/License-MIT-brightgreen.svg) ![platform](https://img.shields.io/badge/Platform-iOS-blue.svg) ![Lang](https://img.shields.io/badge/Language-Swift%204.2-orange.svg)
-[![codebeat badge](https://codebeat.co/badges/253637d5-bb38-4755-8f65-0ae69e9211e1)](https://codebeat.co/projects/github-com-eonist-popover-label-master)
+[![codebeat badge](https://codebeat.co/badges/d719ea56-5725-4aa9-bd95-12e2b0a914ad)](https://codebeat.co/projects/github-com-eonist-popover-label-master)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SwiftLint Sindre](https://img.shields.io/badge/SwiftLint-Sindre-hotpink.svg)](https://github.com/sindresorhus/swiftlint-sindre)
 
